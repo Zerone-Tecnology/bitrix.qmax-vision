@@ -1,0 +1,1 @@
+The introduction of an online store - <a href="http://www.ilab.kz/" target="_blank">Web Studio</a>

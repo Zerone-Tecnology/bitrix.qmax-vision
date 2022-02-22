@@ -1,0 +1,2159 @@
+Host: dev.ilabshop.kz
+Date: 2018-04-23 13:07:16
+Module: main
+FILE: /home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/user.php<br> LINE: 2717 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/user.php:2717
+	/home/m/marketlab/dev.ilabshop/public_html/local/components/it_shop/b_main.register/component.php:65
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/component.php:551
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/component.php:603
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/main.php:1041
+----------
+Host: dev.ilabshop.kz
+Date: 2018-04-23 13:08:17
+Module: main
+FILE: /home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/user.php<br> LINE: 2717 MySql Query Error: SELECT G.SECURITY_POLICY FROM b_group G WHERE G.ID=2 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllUser::GetGroupPolicy < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/user.php:2717
+	/home/m/marketlab/dev.ilabshop/public_html/local/components/it_shop/b_main.register/component.php:65
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/component.php:551
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/component.php:603
+	/home/m/marketlab/dev.ilabshop/public_html/bitrix/modules/main/classes/general/main.php:1041
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-06-18 19:20:17
+Module: main
+FILE: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.NAME AS NAME,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.LEFT_MARGIN AS LEFT_MARGIN
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.IBLOCK_ID = '36')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '1')))) 
+				AND  ((((B.ID = '36')))) 
+				AND  ((((B.ACTIVE='Y')))) 
+			
+				ORDER BY  BS.LEFT_MARGIN asc  [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/components/bitrix/menu.sections/component.php:46
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:594
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:653
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/main.php:1037
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-06-18 19:20:17
+Module: main
+<br>Class: CAllTask<br>File: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php<br>Function: GetList<br>Line: 4627 MySql Query Error: 
+			SELECT
+				T.ID, T.NAME, T.DESCRIPTION, T.MODULE_ID, T.LETTER, T.SYS, T.BINDING
+			FROM
+				b_task T
+			WHERE
+				(1=1
+					AND
+					(
+						( 
+					(T.LETTER='R' and T.LETTER is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.MODULE_ID='main' and T.MODULE_ID is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.BINDING='file' and T.BINDING is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.SYS='Y' and T.SYS is not null)
+					 )
+					)
+					)
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllTask::GetList < CAllTask::GetIdByLetter < CAllMain::GetFileAccessPermission < CAllUser::GetFileOperations
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4627
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4904
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/main.php:1856
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:2949
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/public/top_panel.php:516
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-06-18 19:38:53
+Module: main
+FILE: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.NAME AS NAME,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.LEFT_MARGIN AS LEFT_MARGIN
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.IBLOCK_ID = '36')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '1')))) 
+				AND  ((((B.ID = '36')))) 
+				AND  ((((B.ACTIVE='Y')))) 
+			
+				ORDER BY  BS.LEFT_MARGIN asc  [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/components/bitrix/menu.sections/component.php:46
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:594
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:653
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/main.php:1037
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-06-18 19:38:53
+Module: main
+<br>Class: CAllTask<br>File: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php<br>Function: GetList<br>Line: 4627 MySql Query Error: 
+			SELECT
+				T.ID, T.NAME, T.DESCRIPTION, T.MODULE_ID, T.LETTER, T.SYS, T.BINDING
+			FROM
+				b_task T
+			WHERE
+				(1=1
+					AND
+					(
+						( 
+					(T.LETTER='R' and T.LETTER is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.MODULE_ID='main' and T.MODULE_ID is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.BINDING='file' and T.BINDING is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.SYS='Y' and T.SYS is not null)
+					 )
+					)
+					)
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllTask::GetList < CAllTask::GetIdByLetter < CAllMain::GetFileAccessPermission < CAllUser::GetFileOperations
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4627
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4904
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/main.php:1856
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:2949
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/public/top_panel.php:516
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-08-09 20:59:07
+Module: main
+FILE: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblockelement.php<br> LINE: 784 MySql Query Error: 
+				SELECT  BE.ID as ID,BE.IBLOCK_ID as IBLOCK_ID, FPS0.PROPERTY_301 as PROPERTY_301_VALUE, concat(BE.ID , ':' , 301) as PROPERTY_301_VALUE_ID,BE.SORT as SORT,BE.PREVIEW_PICTURE as PREVIEW_PICTURE,BE.DETAIL_PICTURE as DETAIL_PICTURE , CAT_P1.ID as CATALOG_PRICE_ID_1,  CAT_P1.CATALOG_GROUP_ID as CATALOG_GROUP_ID_1,  CAT_P1.PRICE as CATALOG_PRICE_1,  CAT_P1.CURRENCY as CATALOG_CURRENCY_1,  CAT_P1.QUANTITY_FROM as CATALOG_QUANTITY_FROM_1,  CAT_P1.QUANTITY_TO as CATALOG_QUANTITY_TO_1,  'Розничная' as CATALOG_GROUP_NAME_1,  'Y' as CATALOG_CAN_ACCESS_1,  'Y' as CATALOG_CAN_BUY_1,  CAT_P1.EXTRA_ID as CATALOG_EXTRA_ID_1, CAT_P2.ID as CATALOG_PRICE_ID_2,  CAT_P2.CATALOG_GROUP_ID as CATALOG_GROUP_ID_2,  CAT_P2.PRICE as CATALOG_PRICE_2,  CAT_P2.CURRENCY as CATALOG_CURRENCY_2,  CAT_P2.QUANTITY_FROM as CATALOG_QUANTITY_FROM_2,  CAT_P2.QUANTITY_TO as CATALOG_QUANTITY_TO_2,  'Интернет магазин' as CATALOG_GROUP_NAME_2,  'Y' as CATALOG_CAN_ACCESS_2,  'Y' as CATALOG_CAN_BUY_2,  CAT_P2.EXTRA_ID as CATALOG_EXTRA_ID_2, CAT_P3.ID as CATALOG_PRICE_ID_3,  CAT_P3.CATALOG_GROUP_ID as CATALOG_GROUP_ID_3,  CAT_P3.PRICE as CATALOG_PRICE_3,  CAT_P3.CURRENCY as CATALOG_CURRENCY_3,  CAT_P3.QUANTITY_FROM as CATALOG_QUANTITY_FROM_3,  CAT_P3.QUANTITY_TO as CATALOG_QUANTITY_TO_3,  'Оптовая' as CATALOG_GROUP_NAME_3,  'Y' as CATALOG_CAN_ACCESS_3,  'Y' as CATALOG_CAN_BUY_3,  CAT_P3.EXTRA_ID as CATALOG_EXTRA_ID_3, CAT_PR.QUANTITY as CATALOG_QUANTITY, CAT_PR.QUANTITY_RESERVED as CATALOG_QUANTITY_RESERVED,  IF (CAT_PR.QUANTITY_TRACE = 'D', 'Y', CAT_PR.QUANTITY_TRACE) as CATALOG_QUANTITY_TRACE,  CAT_PR.QUANTITY_TRACE as CATALOG_QUANTITY_TRACE_ORIG,  IF (CAT_PR.CAN_BUY_ZERO = 'D', 'N', CAT_PR.CAN_BUY_ZERO) as CATALOG_CAN_BUY_ZERO,  CAT_PR.CAN_BUY_ZERO as CATALOG_CAN_BUY_ZERO_ORIG,  IF (CAT_PR.NEGATIVE_AMOUNT_TRACE = 'D', 'N', CAT_PR.NEGATIVE_AMOUNT_TRACE) as CATALOG_NEGATIVE_AMOUNT_TRACE,  CAT_PR.NEGATIVE_AMOUNT_TRACE as CATALOG_NEGATIVE_AMOUNT_ORIG,  IF (CAT_PR.SUBSCRIBE = 'D', 'Y', CAT_PR.SUBSCRIBE) as CATALOG_SUBSCRIBE,  CAT_PR.SUBSCRIBE as CATALOG_SUBSCRIBE_ORIG,  CAT_PR.AVAILABLE as CATALOG_AVAILABLE,  CAT_PR.WEIGHT as CATALOG_WEIGHT, CAT_PR.WIDTH as CATALOG_WIDTH, CAT_PR.LENGTH as CATALOG_LENGTH, CAT_PR.HEIGHT as CATALOG_HEIGHT,  CAT_PR.MEASURE as CATALOG_MEASURE,  CAT_VAT.RATE as CATALOG_VAT, CAT_PR.VAT_ID as CATALOG_VAT_ID, CAT_PR.VAT_INCLUDED as CATALOG_VAT_INCLUDED,  CAT_PR.PRICE_TYPE as CATALOG_PRICE_TYPE, CAT_PR.RECUR_SCHEME_TYPE as CATALOG_RECUR_SCHEME_TYPE,  CAT_PR.RECUR_SCHEME_LENGTH as CATALOG_RECUR_SCHEME_LENGTH, CAT_PR.TRIAL_PRICE_ID as CATALOG_TRIAL_PRICE_ID,  CAT_PR.WITHOUT_ORDER as CATALOG_WITHOUT_ORDER, CAT_PR.SELECT_BEST_PRICE as CATALOG_SELECT_BEST_PRICE,  CAT_PR.PURCHASING_PRICE as CATALOG_PURCHASING_PRICE, CAT_PR.PURCHASING_CURRENCY as CATALOG_PURCHASING_CURRENCY,  CAT_PR.TYPE as CATALOG_TYPE, CAT_PR.BUNDLE as CATALOG_BUNDLE
+				FROM 
+			b_iblock B
+			INNER JOIN b_lang L ON B.LID=L.LID
+			INNER JOIN b_iblock_element BE ON BE.IBLOCK_ID = B.ID
+			INNER JOIN b_iblock_element_prop_s20 FPS0 ON FPS0.IBLOCK_ELEMENT_ID = BE.ID
+ left join b_catalog_price CAT_P1 on (CAT_P1.PRODUCT_ID = BE.ID AND CAT_P1.CATALOG_GROUP_ID = 1)  and   ((CAT_P1.QUANTITY_FROM <= 1 OR CAT_P1.QUANTITY_FROM IS NULL) AND (CAT_P1.QUANTITY_TO >= 1 OR CAT_P1.QUANTITY_TO IS NULL))  left join b_catalog_price CAT_P2 on (CAT_P2.PRODUCT_ID = BE.ID AND CAT_P2.CATALOG_GROUP_ID = 2)  and   ((CAT_P2.QUANTITY_FROM <= 1 OR CAT_P2.QUANTITY_FROM IS NULL) AND (CAT_P2.QUANTITY_TO >= 1 OR CAT_P2.QUANTITY_TO IS NULL))  left join b_catalog_price CAT_P3 on (CAT_P3.PRODUCT_ID = BE.ID AND CAT_P3.CATALOG_GROUP_ID = 3)  and   ((CAT_P3.QUANTITY_FROM <= 1 OR CAT_P3.QUANTITY_FROM IS NULL) AND (CAT_P3.QUANTITY_TO >= 1 OR CAT_P3.QUANTITY_TO IS NULL))  left join b_catalog_product CAT_PR on (CAT_PR.ID = BE.ID)  left join b_catalog_iblock CAT_IB on ((CAT_PR.VAT_ID IS NULL OR CAT_PR.VAT_ID = 0) AND CAT_IB.IBLOCK_ID = BE.IBLOCK_ID)  left join b_catalog_vat CAT_VAT on (CAT_VAT.ID = IF((CAT_PR.VAT_ID IS NULL OR CAT_PR.VAT_ID = 0), CAT_IB.VAT_ID, CAT_PR.VAT_ID)) 
+
+		
+				WHERE 1=1 
+			AND (
+			
+				((((BE.IBLOCK_ID = '20'))))
+				AND ((((BE.ACTIVE='Y'))))
+				AND (((BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL) AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL)))
+				AND ( 1=1 )
+				AND ( 1=1 )
+				AND ( 1=1 )
+				AND (((FPS0.PROPERTY_301 IN ('283', '321', '214', '228', '458'))))
+			)
+			AND (((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL)))
+				
+				 ORDER BY BE.SORT asc ,BE.ID desc 
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CIBlockElement::GetList < CIBlockPriceTools::GetOffersArray < include < CBitrixComponent::__includeComponent
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/mysql/iblockelement.php:784
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/iblock/classes/general/comp_pricetools.php:1462
+	/home/bitrix/ext_www/dev.ilabshop.d/local/components/it_shop/i_catalog_menu_v1.0/component.php:233
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:594
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: dev.ilabshop.d:80
+Date: 2018-08-09 20:59:08
+Module: main
+<br>Class: CAllTask<br>File: /home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php<br>Function: GetList<br>Line: 4627 MySql Query Error: 
+			SELECT
+				T.ID, T.NAME, T.DESCRIPTION, T.MODULE_ID, T.LETTER, T.SYS, T.BINDING
+			FROM
+				b_task T
+			WHERE
+				(1=1
+					AND
+					(
+						( 
+					(T.LETTER='D' and T.LETTER is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.MODULE_ID='main' and T.MODULE_ID is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.BINDING='file' and T.BINDING is not null)
+					 )
+					)
+					
+					AND
+					(
+						( 
+					(T.SYS='Y' and T.SYS is not null)
+					 )
+					)
+					)
+			 [[2006] MySQL server has gone away]
+    CDatabaseMysql::Query < CAllTask::GetList < CAllTask::GetIdByLetter < CAllMain::GetFileAccessPermission < CAllUser::GetFileOperations
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4627
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:4904
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/main.php:1856
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/classes/general/user.php:2949
+	/home/bitrix/ext_www/dev.ilabshop.d/bitrix/modules/main/public/top_panel.php:450
+----------
+Host: 
+Date: 2019-10-31 14:28:02
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[] ]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents < require_once < require
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/mysql/agent.php:75
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/mysql/agent.php:40
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/include.php:264
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/include/prolog_before.php:14
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/tools/cron_events.php:11
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:53:27
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:53:33
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:53:35
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:10
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:10
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:10
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:15
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:18
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:20
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:21
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:23
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:31
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:35
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:35
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'samsung')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:39
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'qmax')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M7', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M7%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M7', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M7%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M70', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M70%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M70', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M70%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M700', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M700%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 12:55:52
+Module: main
+ MySql Query Error: 
+				SELECT
+					sc.ID
+					,sc.MODULE_ID
+					,sc.ITEM_ID
+					,sc.TITLE
+					,sc.PARAM1
+					,sc.PARAM2
+					,sc.DATE_CHANGE
+					,sc.URL as URL
+					,scsite.URL as SITE_URL
+					,scsite.SITE_ID
+					,if(locate('M700', upper(sc.TITLE)) > 0, 1, 0) RANK1
+					,count(1) RANK2
+					,min(ct.POS) RANK3
+				FROM
+					b_search_content_title ct
+					inner join b_search_content sc on sc.ID = ct.SEARCH_CONTENT_ID
+					INNER JOIN b_search_content_site scsite ON sc.ID = scsite.SEARCH_CONTENT_ID and ct.SITE_ID = scsite.SITE_ID
+				WHERE
+					((1=1))
+					AND ct.SITE_ID = 'it'
+					AND (ct.WORD like 'M700%')
+					AND 
+(
+	(
+		sc.MODULE_ID = 'main'
+		AND ((sc.URL LIKE '/%') OR (scsite.URL LIKE '/%'))
+	)
+	OR (
+		sc.MODULE_ID = 'iblock'
+		AND UPPER(sc.PARAM1) like upper('catalog')
+		AND (UPPER(sc.PARAM2) like upper('3'))
+	)
+)
+				GROUP BY
+					ID, MODULE_ID, ITEM_ID, TITLE, PARAM1, PARAM2, DATE_CHANGE, URL, SITE_URL, SITE_ID
+				
+				ORDER BY DATE_CHANGE DESC, RANK1 DESC, RANK2 DESC, RANK3 ASC, TITLE
+				LIMIT 0, 6
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CSearchTitle::searchTitle < CAllSearchTitle::Search < include < CBitrixComponent::__includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/mysql/title.php:83
+	/home/q/qmaxviskz/public_html/bitrix/modules/search/classes/general/title.php:27
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_search.title/component.php:85
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 13:06:33
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'komplektuyushchie-dlya-pk')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 13:06:33
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'komplektuyushchie-dlya-pk')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 13:07:01
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'aksessuary-dlya-multipekarya')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-07 14:17:03
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-08 13:18:47
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-12 07:59:41
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-12 08:31:29
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-12 08:31:30
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((((BS.CODE = 'aksessuary-dlya-multipekarya')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-12 08:31:38
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT 
+				BS.*,
+				B.LIST_PAGE_URL,
+				B.SECTION_PAGE_URL,
+				B.IBLOCK_TYPE_ID,
+				B.CODE as IBLOCK_CODE,
+				B.XML_ID as IBLOCK_EXTERNAL_ID,
+				BS.XML_ID as EXTERNAL_ID,
+				DATE_FORMAT(BS.TIMESTAMP_X, '%d.%m.%Y %H:%i:%s') as TIMESTAMP_X,
+				DATE_FORMAT(BS.DATE_CREATE, '%d.%m.%Y %H:%i:%s') as DATE_CREATE
+			
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+				
+				WHERE 1=1
+				
+				
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			 [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponentTemplate::__IncludeMutatorFile < CBitrixComponentTemplate::IncludeTemplate
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/b_catalog_new/templates/i_catalog/result_modifier.php:10
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:882
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component_template.php:789
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:735
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-12 08:31:50
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: www.qmax-vision.kz
+Date: 2019-11-13 13:13:46
+Module: main
+FILE: /home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php<br> LINE: 417 MySql Query Error: SELECT DISTINCT BS.ID AS ID,
+BS.IBLOCK_SECTION_ID AS IBLOCK_SECTION_ID,
+BS.IBLOCK_ID AS IBLOCK_ID,
+B.SECTION_PAGE_URL AS SECTION_PAGE_URL,
+BS.DEPTH_LEVEL AS DEPTH_LEVEL,
+BS.CODE AS CODE,
+BS.XML_ID AS EXTERNAL_ID,
+B.IBLOCK_TYPE_ID AS IBLOCK_TYPE_ID,
+B.CODE AS IBLOCK_CODE,
+B.XML_ID AS IBLOCK_EXTERNAL_ID,
+BS.GLOBAL_ACTIVE AS GLOBAL_ACTIVE,
+BS.SORT AS SORT,
+BS.NAME AS NAME,COUNT(DISTINCT BE.ID) as ELEMENT_CNT, BUF.UF_LINK, BUF.UF_IMG_WHITE, BUF.UF_PRODUCT, BUF.UF_COLUM_MENU, BUF.UF_NAME, BUF.UF_IMG, BUF.UF_IMG_2, BUF.UF_SUBTITLE_RU
+				FROM b_iblock_section BS
+					INNER JOIN b_iblock B ON BS.IBLOCK_ID = B.ID
+					
+LEFT JOIN b_uts_iblock_3_section BUF ON BUF.VALUE_ID = BS.ID
+					INNER JOIN b_iblock_section BSTEMP ON BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						LEFT JOIN b_iblock_section_element BSE ON BSE.IBLOCK_SECTION_ID=BSTEMP.ID 
+					LEFT JOIN b_iblock_element BE ON (BSE.IBLOCK_ELEMENT_ID=BE.ID
+						AND ((BE.WF_STATUS_ID=1 AND BE.WF_PARENT_ELEMENT_ID IS NULL )
+						AND BE.IBLOCK_ID = BS.IBLOCK_ID
+				)
+				 AND BE.ACTIVE='Y'
+					AND (BE.ACTIVE_TO >= now() OR BE.ACTIVE_TO IS NULL)
+					AND (BE.ACTIVE_FROM <= now() OR BE.ACTIVE_FROM IS NULL))
+					
+				WHERE 1=1
+					AND BSTEMP.IBLOCK_ID = BS.IBLOCK_ID
+						AND BSTEMP.LEFT_MARGIN >= BS.LEFT_MARGIN
+						AND BSTEMP.RIGHT_MARGIN <= BS.RIGHT_MARGIN
+						AND BSTEMP.GLOBAL_ACTIVE = 'Y'
+					
+				
+				AND  ((((BS.IBLOCK_ID = '3')))) 
+				AND  ((((BS.ACTIVE='Y')))) 
+				AND  ((((BS.GLOBAL_ACTIVE='Y')))) 
+				AND  ((((BS.DEPTH_LEVEL <= '4')))) 
+				AND  ((((B.ID = '3')))) 
+				AND  ((
+				B.ID IN (
+			SELECT IBLOCK_ID
+			FROM b_iblock_group IBG
+			WHERE IBG.GROUP_ID IN (2)
+			AND IBG.PERMISSION >= 'R'
+		
+				AND (IBG.PERMISSION='X' OR B.ACTIVE='Y')
+			)
+				OR (B.RIGHTS_MODE = 'E' AND EXISTS (
+				SELECT SR.SECTION_ID
+				FROM b_iblock_section_right SR
+				INNER JOIN b_iblock_right IBR ON IBR.ID = SR.RIGHT_ID
+				INNER JOIN b_user_access UA ON UA.ACCESS_CODE = IBR.GROUP_CODE AND UA.USER_ID = 0
+				WHERE SR.SECTION_ID = BS.ID
+				AND IBR.OP_SREAD = 'Y'
+				
+			))
+			)) 
+			GROUP BY BS.ID, B.ID
+				ORDER BY  BS.SORT asc ,  BS.NAME asc  [[1030] Got error 28 from storage engine]
+    CDatabaseMysql::Query < CIBlockSection::GetList < include < CBitrixComponent::__includeComponent < CBitrixComponent::includeComponent
+	/home/q/qmaxviskz/public_html/bitrix/modules/iblock/classes/mysql/iblocksection.php:417
+	/home/q/qmaxviskz/public_html/local/components/it_shop/i_catalog_menu_v2.0/component.php:31
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:594
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/component.php:653
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php:1038
+----------
+Host: qmax-vision.kz
+Date: 2020-01-27 03:16:25
+Module: main
+ MySql Query Error: 
+						INSERT INTO b_stat_country (ID, SHORT_NAME, NAME) VALUES (
+							'AG',
+							'ATG',
+							'Antigua and Barbuda'
+						)
+					 [[1062] Duplicate entry 'AG' for key 'PRIMARY']
+    CDatabaseMysql::Query < CCity::GetCityID < CKeepStatistics::ReallyKeep < CKeepStatistics::Keep < ExecuteModuleEventEx
+	/home/q/qmaxviskz/public_html/bitrix/modules/statistic/classes/general/city.php:506
+	/home/q/qmaxviskz/public_html/bitrix/modules/statistic/classes/general/keepstatistic.php:307
+	/home/q/qmaxviskz/public_html/bitrix/modules/statistic/classes/general/keepstatistic.php:81
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/module.php:490
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/include.php:572
+----------
+Host: 
+Date: 2020-02-18 03:11:02
+Module: main
+ MySql Query Error: 
+			SELECT 'x'
+			FROM b_agent
+			WHERE
+				ACTIVE = 'Y'
+				AND NEXT_EXEC <= now()
+				AND (DATE_CHECK IS NULL OR DATE_CHECK <= now())
+				 AND IS_PERIOD='N' 
+			LIMIT 1
+		 [[] ]
+    CDatabaseMysql::Query < CAgent::ExecuteAgents < CAgent::CheckAgents < require_once < require
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/mysql/agent.php:75
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/mysql/agent.php:40
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/include.php:264
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/include/prolog_before.php:14
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/tools/cron_events.php:11
+----------
+Host: www.qmax-vision.kz
+Date: 2020-12-09 22:15:38
+Module: security
+Module: security; Class: CSecurityAntiVirus; Function: AddEventLog; File: /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php; Line: 494 MySql Query Error: insert into b_sec_virus (ID, TIMESTAMP_X, SITE_ID, INFO) values ('25961cd2726cfc82345d37b58770b679', now(), 'it', 'YToxMTp7czo4OiJTRVZFUklUWSI7czo4OiJTRUNVUklUWSI7czoxMzoiQVVESVRfVFlQRV9JRCI7czoxNDoiU0VDVVJJVFlfVklSVVMiO3M6OToiTU9EVUxFX0lEIjtzOjg6InNlY3VyaXR5IjtzOjc6IklURU1fSUQiO3M6NzoiVU5LTk9XTiI7czoxMToiUkVNT1RFX0FERFIiO3M6MTQ6Ijg3LjI1NS4xOTQuMjE1IjtzOjEwOiJVU0VSX0FHRU5UIjtzOjczOiJNb3ppbGxhLzUuMCAoY29tcGF0aWJsZTsgU2VtcnVzaEJvdC1CQTsgK2h0dHA6Ly93d3cuc2VtcnVzaC5jb20vYm90Lmh0bWwpIjtzOjExOiJSRVFVRVNUX1VSSSI7czo1NjoiL2NhdGFsb2cvYnl0b3ZheWEtdGVraG5pa2EvdGVsZXZpem9yLWxjZC1sZy02NXNtODIwMHBsYS8iO3M6NzoiU0lURV9JRCI7czoyOiJpdCI7czo3OiJVU0VSX0lEIjtiOjA7czo4OiJHVUVTVF9JRCI7aToyMTg4MTA7czoxMToiREVTQ1JJUFRJT04iO3M6MTkwOiI9PVBHbG1jbUZ0WlNCemNtTTlJbWgwZEhCek9pOHZkM2QzTG1kdmIyZHNaWFJoWjIxaGJtRm5aWEl1WTI5dEwyNXpMbWgwYld3L2FXUTlSMVJOTFVzeU5GbzFORGNpQ21obGFXZG9kRDBpTUNJZ2QybGtkR2c5SWpBaUlITjBlV3hsUFNKa2FYTndiR0Y1T201dmJtVTdkbWx6YVdKcGJHbDBlVHBvYVdSa1pXNGlQand2YVdaeVlXMWxQZz09Ijt9') [Bitrix\Main\DB\SqlQueryException: Mysql query error: (1062) Duplicate entry '25961cd2726cfc82345d37b58770b679' for key 'PRIMARY' in /home/q/qmaxviskz/public_html/bitrix/modules/main/lib/db/mysqliconnection.php:137
+Stack trace:
+#0 /home/q/qmaxviskz/public_html/bitrix/modules/main/lib/db/connection.php(330): Bitrix\Main\DB\MysqliConnection->queryInternal('insert into b_s...', Array, NULL)
+#1 /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/mysql/database.php(118): Bitrix\Main\DB\Connection->query('insert into b_s...')
+#2 /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/mysql/database.php(134): CSecurityDB::Query('insert into b_s...', 'Module: securit...')
+#3 /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php(494): CSecurityDB::QueryBind('insert into b_s...', Array, 'Module: securit...')
+#4 /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php(606): CSecurityAntiVirus->dolog()
+#5 /home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php(199): CSecurityAntiVirus->Analyze('\n<!DOCTYPE html...')
+#6 /home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/module.php(480): CSecurityAntiVirus::OnEndBufferContent('\n<!DOCTYPE html...')
+#7 /home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php(3219): ExecuteModuleEventEx(Array, Array)
+#8 /home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/main.php(3167): CAllMain->EndBufferContent('\n<!DOCTYPE html...')
+#9 /home/q/qmaxviskz/public_html/bitrix/modules/main/include/epilog_after.php(43): CAllMain->EndBufferContentMan()
+#10 /home/q/qmaxviskz/public_html/bitrix/modules/main/include/epilog.php(3): require('/home/q/qmaxvis...')
+#11 /home/q/qmaxviskz/public_html/bitrix/footer.php(4): require_once('/home/q/qmaxvis...')
+#12 /home/q/qmaxviskz/public_html/catalog/index.php(1211): require('/home/q/qmaxvis...')
+#13 /home/q/qmaxviskz/public_html/bitrix/modules/main/include/urlrewrite.php(159): include_once('/home/q/qmaxvis...')
+#14 /home/q/qmaxviskz/public_html/bitrix/urlrewrite.php(2): include_once('/home/q/qmaxvis...')
+#15 {main}]
+    CSecurityDB::Query < CSecurityDB::QueryBind < CSecurityAntiVirus::dolog < CSecurityAntiVirus::Analyze < CSecurityAntiVirus::OnEndBufferContent
+	/home/q/qmaxviskz/public_html/bitrix/modules/security/classes/mysql/database.php:134
+	/home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php:494
+	/home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php:606
+	/home/q/qmaxviskz/public_html/bitrix/modules/security/classes/general/antivirus.php:199
+	/home/q/qmaxviskz/public_html/bitrix/modules/main/classes/general/module.php:480
+----------

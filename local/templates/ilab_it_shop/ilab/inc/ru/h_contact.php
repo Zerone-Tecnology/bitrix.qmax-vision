@@ -1,0 +1,2 @@
+<span class="i_color_black"><span style="color: #000000;"><a href="https://wa.me/87789575738">+7 (778) <span style="color: #000000;">957 57 38</span></a></span><a href="https://wa.me/77789575738" target="_blank"></a>&nbsp; &nbsp;<a href="tel:87008368090">+7 (700)&nbsp;</a><a href="tel:87008368090"><span style="color: #000000;">836 80 90</span></a><br>
+ </span>

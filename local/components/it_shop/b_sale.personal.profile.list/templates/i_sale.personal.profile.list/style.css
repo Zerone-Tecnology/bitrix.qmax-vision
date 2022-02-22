@@ -1,0 +1,124 @@
+.i_profile_list {
+	border: unset;
+	border-radius: 0 0 5px 5px;
+}
+.i_profile_list table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	background-color: #ededed;
+}
+.i_profile_list table td {
+	padding: 15px 20px;
+}
+
+.i_profile_list table tbody {
+	
+}
+
+.i_profile_list table thead td,
+.i_profile_list table thead th {
+	font-weight: normal;
+	font-family: "Roboto Bold", sans-serif;
+}
+
+/*Table*/
+table.sale_personal_profile_list {}
+
+/* Table tr*/
+
+
+/*Table head*/
+table.sale_personal_profile_list th {}
+
+/* Table cells and heads*/
+table.sale_personal_profile_list th, table.sale_personal_profile_list td {}
+
+
+.sale-personal-profile-list-arrow-up,
+.sale-personal-profile-list-arrow-down {}
+
+.sale-personal-profile-list-arrow-up:hover,
+.sale-personal-profile-list-arrow-down:hover {}
+
+.sale-personal-profile-list-close-button,
+.sale-personal-profile-list-change-button {
+	position: relative;
+	color: black;
+}
+
+.sale-personal-profile-list-close-button:before,
+.sale-personal-profile-list-change-button:before {
+	content: '';
+	height: 19px;
+	width: 19px;
+	display: inline-block;
+}
+
+.sale-personal-profile-list-actions {}
+
+.sale-personal-profile-list-close-button:before {
+	background: #d4dadf url(/local/templates/ilab_it_shop/ilab/img/svg/profile/delete.svg) no-repeat center / 9px auto;
+	border-radius: 50%;
+}
+
+.sale-personal-profile-list-close-button:hover {}
+
+.sale-personal-profile-list-change-button:before {
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/profile/edit.svg) no-repeat;
+
+}
+
+.sale-personal-profile-list-change-button:hover {}
+
+.sale-personal-profile-list-border {}
+
+@media screen and (min-width: 701px) {
+	.i_profile_list table td:not(:first-child) {
+		border-left: 1px solid;
+	}
+	.sale-personal-profile-list-close-button span,
+	.sale-personal-profile-list-change-button span {
+		display: none;
+	}
+	.sale-personal-profile-list-change-button {
+		padding-right: 20px;
+	}
+	.sale-personal-profile-list-close-button {
+		border-left: 1px solid #e4e4e2;
+		padding-left: 20px;
+	}
+	.sale-personal-profile-list-close-button,
+	.sale-personal-profile-list-change-button {
+		display: table-cell;
+	}	
+}
+@media screen and (max-width: 700px) {
+	.i_profile_list table thead {
+		display: none;
+	}
+	.i_profile_list table tbody td {
+		display: flex;
+	}
+	.i_profile_list table tbody td > * {
+		flex: 1;
+	}
+	.i_profile_list table tbody td[data-mess]:before {
+		content: attr(data-mess)': ';
+		font-weight: bold;
+		flex: 1;
+	}
+	.i_profile_list table tbody td[data-mess]:before,
+	.sale-personal-profile-list-change-button {
+		padding-right: 20px;
+	}
+	.sale-personal-profile-list-close-button,
+	.sale-personal-profile-list-change-button {}
+	.sale-personal-profile-list-close-button a,
+	.sale-personal-profile-list-change-button a {
+		padding-left: 27px;
+	}
+	.sale-personal-profile-list-actions {
+		border-top: 1px solid #e4e4e2;
+	}
+}

@@ -1,0 +1,1 @@
+Development of online stores - <a href="http://www.ilab.kz/" target="_blank">iLab</a>

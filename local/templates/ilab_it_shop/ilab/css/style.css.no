@@ -1,0 +1,203 @@
+body, html, * {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+.idnone
+{
+	display: none;
+}
+/* ---------------------------------------------- i_demo */
+.i_demo
+{
+	position: absolute;
+	z-index: 100;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: #ffa500;
+	color: #fff;
+	display: none;
+}
+.i_demo ul li
+{
+	margin: 10px 0 0 25px;
+}
+.i_demo ul a
+{
+	color: #fff
+}
+@media screen and (min-width: 960px)
+{
+	.i_demo
+	{
+		top: 50px;
+		left: 50%;
+		margin-left: -430px;
+		width: 800px;
+		padding: 30px;
+	}
+}
+@media screen and (max-width: 959px)
+{
+	.i_demo
+	{
+		top: 50px;
+		left: 20px;
+		right: 20px;
+		padding: 30px;
+	}
+}
+
+/* ---------------------------------------------- i_tblock */
+.i_tblock .i_wr
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.i_login a
+{
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+}
+.i_login a span
+{
+	border-bottom: 1px dashed;
+}
+.i_log_sep
+{
+	margin: 0 11px 0 10px;
+	border-left: 1px solid;
+	position: relative;
+}
+.i_login_cabinet:before,
+.i_auth_personal:before,
+.i_registration:before
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-size: 17px 16px;
+	width: 18px;
+	height: 18px;
+}
+.i_login_cabinet:before
+{
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/main/auth2.svg) center no-repeat;
+}
+.i_auth_personal:before
+{
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/main/auth.svg) center no-repeat;
+}
+.i_registration:before
+{
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/main/registration.svg) center no-repeat;
+}
+.i_login_exit
+{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/main/close_main_reg.svg) center no-repeat;
+}
+@media screen and (min-width: 640px)
+{
+	.i_login
+	{
+		min-width: 290px;
+		text-align: right;
+	}
+	.i_login a.i_login_cabinet,
+	.i_login a.i_auth_personal,
+	.i_login a.i_registration
+	{
+		padding-left: 25px;
+	}
+	.i_login_exit
+	{
+		margin-left: 10px;
+	}
+	.i_tm_a.i_more::after
+	{
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		top: 50%;
+		margin-top: -5px;
+		right: 10px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+@media screen and (max-width: 639px)
+{
+	.i_login a.i_login_cabinet,
+	.i_login a.i_auth_personal,
+	.i_login a.i_registration
+	{
+		padding-left: 20px;
+	}
+	.i_login_name
+	{
+		display: none;
+	}
+	.i_tblock .i_wr
+	{
+		height: 50px;
+	}
+	.i_login_cabinet span,
+	.i_auth_personal span,
+	.i_registration span
+	{
+		display: none;
+	}
+	.i_tm_item.jq_tm_imore
+	{
+		display: none;
+	}
+	.i_tm_a.i_more .i_tm_ar
+	{
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/right_color.svg);
+		position: absolute;
+		display: inline-block;
+		width: 10px;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 8px;
+		left: 20px;
+		top: 0;
+	}
+	.i_tm_a.i_more:hover .i_tm_ar,
+	.i_tm_a.i_more.i_tm_hover .i_tm_ar,
+	.i_tm_a.i_more.i_tm_selected .i_tm_ar
+	{
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/right_white.svg);
+	}
+	.i_tm_a.i_more.i_tm_hover.open .i_tm_ar
+	{
+		transform: rotate(90deg);
+	}
+	.i_sub_a_text
+	{
+		position: relative;
+	}
+	.i_sub_a_text:before
+	{
+		content: '';
+		position: absolute;
+		left: -20px;
+		top: 50%;
+		margin-top: -3px;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	}
+}
+/* ---------------------------------------------- i_wrapper */
+.i_wrapper
+{
+	display: none;
+}

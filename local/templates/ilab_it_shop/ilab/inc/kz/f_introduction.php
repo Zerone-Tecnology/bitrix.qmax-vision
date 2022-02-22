@@ -1,0 +1,1 @@
+Интернет-дүкеннің енгізілуі - <a href="http://www.ilab.kz/" target="_blank">iLab-Ecommerce</a>

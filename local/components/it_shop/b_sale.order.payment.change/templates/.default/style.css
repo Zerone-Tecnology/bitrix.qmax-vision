@@ -1,0 +1,168 @@
+/*pay*/
+
+.sale-order-payment-change-pp {}
+.sale-order-payment-change-pp-list {
+	display: flex;
+	flex-flow: wrap;
+
+	margin-top: 20px;
+}
+.sale-order-payment-change-pp-company {
+	background-color: white;
+	border-radius: 5px;
+	min-height: 80px;
+}
+
+.sale-order-payment-change-pp-company:nth-child(2n+1) {
+	margin-right: 20px;
+}
+
+.sale-order-payment-change-pp-company:last-child {
+	margin-right: 0px; !important;
+}
+
+@media (max-width: 500px) {
+	.sale-order-payment-change-pp-company:nth-child(2n+1) {
+		margin-right: 0px !important;
+	}
+	.sale-order-payment-change-pp-list {
+		flex-flow: column;
+	}
+}
+
+/*.sale-order-payment-change-pp .sale-order-payment-change-pp-company:nth-child(2n) {
+	margin-left: 20px;
+}*/
+
+.sale-order-payment-change-pp .sale-order-payment-change-pp-company:nth-child(1n+3) {
+	margin-top: 20px;
+}
+.sale-order-payment-change-pp .sale-order-payment-change-pp-company {
+	flex: 1 40%;
+}
+.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-graf-container {}
+.sale-order-payment-change-pp-company-graf-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 80px;
+	height: 100%;
+}
+
+@media (max-width: 500px) {
+	.sale-order-payment-change-pp-company {
+		margin-left: 0px;
+		margin-top: 20px;
+	}
+	.sale-order-payment-change-pp .sale-order-payment-change-pp-company:nth-child(2n) {
+		margin-left: 0px;
+	}
+}
+/*.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-image {
+	background-color: #003b7f;
+	border-color: #003b7f;
+}
+.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-image span {
+	background-position: 0 -50px;
+}*/
+.sale-order-payment-change-pp-company-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+
+	width: 80px;
+	height: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .5s;
+}
+.sale-order-payment-change-pp-company-image span {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-repeat: no-repeat;
+	margin: auto;
+}
+.sale-order-payment-change-pp-company:hover .sale-order-payment-change-pp-company-smalltitle span {
+	color: #003b7f;
+}
+.sale-order-payment-change-pp-company-smalltitle {
+	margin-left: 80px;
+	padding: 15px 15px 15px 0;
+	border-radius: 5px;
+
+	cursor: pointer;
+}
+.sale-order-payment-change-pp-company-smalltitle span {
+	color: black;
+	border-bottom: 1px dashed;
+}
+.sale-order-payment-change-pp-field .form-control {}
+.sale-order-payment-change-pp-price {}
+.sale-order-payment-change-service-small {}
+@media (min-width: 1200px) {
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(4n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(4n+1) {}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(3n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(3n+1) {}
+}
+@media (max-width: 767px) {
+	.sale-order-payment-change-pp,
+	.sale-order-payment-change-pp-item-container {	}
+	.sale-order-payment-change-pp div .sale-order-payment-change-pp-company:nth-child(2n+1),
+	.sale-order-payment-change-pp-item-container .sale-order-payment-change-pp-company:nth-child(2n+1) {}
+}
+.sale-order-payment-change-inner-row {}
+.sale-order-payment-change-payment {}
+.sale-order-payment-change-payment-title {}
+span.sale-order-payment-change-status-alert {
+	color: #e30613;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDZCODQ2NjE1NUY2MTFFNDhBMDY4QzM3OEMwQTI3MzQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDZCODQ2NjI1NUY2MTFFNDhBMDY4QzM3OEMwQTI3MzQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENkI4NDY1RjU1RjYxMUU0OEEwNjhDMzc4QzBBMjczNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENkI4NDY2MDU1RjYxMUU0OEEwNjhDMzc4QzBBMjczNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PnZSLLsAAACuSURBVHjaYvr//z8DOZiFAQ3c5eePB1IJQKwAxAJAfAGIFyh//LgQWR0jSDdUAz+QOgDEBgzYAcgAB6ABH0EcJiQJfJoYoHIHYBwmJOfh0wTXDFULtzGBgXgQACJYkJwBBkA/MGJTDbTpP7JamI0fSLBRANnGB9DgRzaZAU/owm1cQIKNC+AaoZF7gQhNF2AJATkeHQhovgBVg5pysCQ5A2iggTRswJnkSAUAAQYAay1fB+LgK9gAAAAASUVORK5CYII=);
+}
+span.sale-order-payment-change-status-success {
+	color: #2da416;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkRCQzFFRjczOEJENjExRTc4Mzk3QzY4MzQ2N0E4QTJEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkRCQzFFRjc0OEJENjExRTc4Mzk3QzY4MzQ2N0E4QTJEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6REJDMUVGNzE4QkQ2MTFFNzgzOTdDNjgzNDY3QThBMkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6REJDMUVGNzI4QkQ2MTFFNzgzOTdDNjgzNDY3QThBMkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4UULZqAAABL0lEQVR42mL8//8/AzmABUTYnWmB8dmAOAOII4FYByp2BYiXA/EMIP4FEjhkUgPRCAXSQLwFiA3QDLeA4kQg9gHipyBBJiSbsGkCAw4mVgao3FYgZkfWmI5Lk52gOsNSnSwGZU4xEFcfiNOQNUbBFDoKajKwMjJDNWkw1CsFMYiy8TLkyLoyIKuF+dEIRCRK2YHxwfc3GA68v85QpegHNuTu91cMjffWwzQaImtEAfZAm0AYBECaCm8uYfjw5xtM+jeyU8+BiPnPDoExDGDRBIseuI3LoUEO1wjyHxZNMLUMjKCUA0wAoCA+CQ01MGBnYmH4+e8PuqZLQGwGTAA/YU79CcTeQHwBpgKLpotA7AVVC/cjAzRFmANxARCfAeKvUHwGKmYGSzVwp5IDAAIMANmrX1iLLzmtAAAAAElFTkSuQmCC);
+}
+span.sale-order-payment-change-status-restricted {
+	color: orange;
+	padding: 4px 0 5px;
+}
+.sale-order-payment-change-status-alert,
+.sale-order-payment-change-status-restricted,
+.sale-order-payment-change-status-success {
+	display: inline-block;
+	padding: 4px 0 5px 20px;
+
+	background-repeat: no-repeat;
+	background-position: left 5px;
+
+	font-size: 87.5%;
+
+	vertical-align: middle;
+}
+.sale-order-payment-change-status-restricted {}
+.sale-order-payment-change-status-success {}
+.sale-order-payment-change-payment-price {
+	margin-top: 10px;
+}
+.sale-order-payment-change-payment-form-group {}
+.sale-order-payment-change-payment-form-cell {}
+.sale-order-inner-payment-button {}
+.sale-order-inner-payment-button:hover {}
+.sale-order-inner-payment-button.inactive-button {}
+.sale-order-inner-payment-button.inactive-button:hover {}
+.sale-order-inner-padding-bottom {}
+.sale-paysystem-wrapper {}
+.sale-paysystem-wrapper {}
+.sale-paysystem-close {}
+.sale-paysystem-close-item {}
+.sale-paysystem-close-item:hover {}
+.sale-paysystem-description {}
+.sale-paysystem-yandex-button {}
+.sale-paysystem-yandex-button-item {}
+.sale-paysystem-yandex-button-item:hover {}
+.sale-paysystem-yandex-button-descrition {}

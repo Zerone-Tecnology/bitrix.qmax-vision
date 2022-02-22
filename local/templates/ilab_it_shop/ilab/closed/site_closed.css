@@ -1,0 +1,142 @@
+/* ---------------------------------------------------------------------------------------------------- iLaB */
+@charset 'UTF-8';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+/*	line-height: 1.3em;*/
+}
+
+body {
+	background-color: white;
+	font-family: Tahoma;
+	font-size: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 60px;
+}
+
+table { width: 100% }
+table td { padding: 5px }
+
+input[type='text'],
+input[type='password'] {
+	border: 0 none;
+	border-radius: 1px;
+	padding: 10px;
+	width: 100%;
+	font-size: 100%;
+
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+input[type='password'] { padding-right: 30px }
+input[type='submit'] {
+	border: none;
+	font-weight: bold;
+	padding: 10px;
+	width: 100%;
+	border-radius: 1px;
+	cursor: pointer;
+	font-size: 100%;
+	-webkit-appearance: none;
+
+	background-color: #777f8c;
+	color: #FFF;
+}
+
+.closed:after {
+	background: url(/local/templates/ilab_it_shop/ilab/img/logo/logo.svg) no-repeat center center / contain;
+	/*background-image: url(/local/templates/ilab_it_shop/ilab/closed/under.png);*/
+	content: '';
+	width: 240px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -120px;
+	top: 0px;
+}
+
+.closed {
+	background-color: #F1F2F3;
+	padding: 15px;
+	width: 250px;
+	border-radius: 1px;
+
+	/*position: absolute;*/
+	top:50%;left:50%;
+	/*margin: -100px auto 0 -140px;*/
+	z-index: 1;
+}
+	.closed img.logo {
+		display: block;
+		margin: 0 auto;
+		/*position: absolute;*/
+		top: -70px;
+	}
+	.closed .cl {
+		background-color: #585858;
+		color: white;
+		border-radius: 0 1px 1px 0;
+
+		/*width: 230px;*/
+		padding: 15px;
+
+		/*position: absolute;
+		bottom:0;right: -230px;
+		margin-top: -45px;*/
+	}
+
+.footer {
+	background-color: #585858;
+	color: #C7C7C7;
+	padding-left: 15px;
+	width: 100%;
+	font-size: 90%;
+
+	position: fixed;
+	bottom:0;left:0;
+}
+	.footer a {
+		text-decoration: none;
+		color: #FFF;
+	}
+	.f_l, .f_r { padding: 15px 15px 15px 0 }
+/* ---------------------------------------------------------------------------------------------------- aLL used */
+.iclear			{ clear:both }
+.aclear:after	{ clear: both; content: ''; display: block }
+.ifleft			{ float:left }
+.ifright		{ float:right }
+.iwr {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.i_mr50 { margin-right: 50px }
+
+@media screen and (max-width: 1024px) {
+	.iwr { width: auto }
+}
+/*	----------------------------------------------------------------------------------------------------
+	-> iLaB Powered
+		License: none (public domain)
+	---------------------------------------------------------------------------------------------------- */

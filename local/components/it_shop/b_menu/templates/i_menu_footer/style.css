@@ -1,0 +1,139 @@
+.i_f_menu > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.i_f_menu > ul > li {
+    position: relative;
+    /*overflow: hidden;*/
+    padding-left: 26px;
+}
+.i_f_menu > ul > li:before {
+    content: '';
+    width:6px;
+    height:6px;
+    border-radius: 50%;
+    top: 11px;
+    margin-left: -16px;
+    position: absolute;
+    background-color: #b8bdc1;
+}
+.i_f_menu > ul > li > a {
+    /*color: #333333;*/
+    padding: 5px 0;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 481px) {
+    .i_f_menu > ul {
+        columns: 3 177px;
+    }
+    .i_fm_ad {
+        display: none;
+    }
+}
+@media screen and (min-width: 801px) {
+    .i_f_right {
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .i_f_top {
+        flex-flow: column;
+    }
+    .i_f_right:before {
+        content: '';
+        background-color: white;
+        position: absolute;
+        height: 1px;
+        left: -20px;
+        right: -20px;
+        top: 0;
+    }
+    .i_f_right {
+        position: relative;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .i_f_menu > ul {
+        display: none;
+        margin-top: 15px;
+        padding-bottom: 15px;
+    }
+    .i_f_menu .i_fmenu_button {
+        display: block;
+        cursor: pointer;
+    }
+    /* -------------------------------------------------- animated icon nav */
+    nav.i_f_menu .i_fm_ad_but {
+        margin-left: 10px;
+        font-size: 115%;
+        /*font-weight: bold;*/
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    nav.i_f_menu .i_fm_ad {
+        color: #333333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*margin: -20px;*/
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .i_fm_x {
+        padding: 10px 0;
+    }
+    .i_fm_x {
+        display: inline-block;
+        position: relative;
+        transition: 0.25s;
+        user-select: none;
+    }
+
+    .i_fm_x .i_fm_icon,
+    .i_fm_x .i_fm_icon:before,
+    .i_fm_x .i_fm_icon:after {
+        width: 25px;
+        height: 5px;
+    }
+    .i_fm_x .i_fm_icon {
+        position: relative;
+        background: #f75b18;
+        transition: 0.25s;
+    }
+    .i_fm_x .i_fm_icon:before {
+        top: 10px;
+    }
+    .i_fm_x .i_fm_icon:after {
+        top: -10px;
+    }
+    .i_fm_x .i_fm_icon:before,
+    .i_fm_x .i_fm_icon:after {
+        display: block;
+        content: '';
+        background: #f75b18;
+        position: absolute;
+        transition: 0.25s;
+    }
+    /* Open */
+    .i_fm_x_open .i_fm_icon:before,
+    .i_fm_x_open .i_fm_icon:after {
+        transition: 0.5s;
+        top: 0 !important;
+    }
+    .i_fm_x_open .i_fm_icon {
+        background: transparent;
+    }
+    .i_fm_x_open .i_fm_icon:before {
+        transform: rotate(-45deg);
+    }
+    .i_fm_x_open .i_fm_icon:after {
+        transform: rotate(45deg);
+    }
+}

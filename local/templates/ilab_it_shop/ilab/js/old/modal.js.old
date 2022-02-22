@@ -1,0 +1,248 @@
+// ---------------------------------------------------------------------------------------------------- iLaB modal Script
+$(document).ready(function(){
+
+	// Условия покупки main left/right
+	$('body').on('click', '.jq_m_stock', function(){
+		var pos = $('#jqm_more_stock').attr('jqpos');
+		i_modal('.jqm_more_stock', 'i_more_pos_stock_'+pos, 'center', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_m_expected', function(){
+		var pos = $('#jqm_more_expected').attr('jqpos');
+		i_modal('.jqm_more_expected', 'i_more_pos_expected_'+pos, 'center', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_m_to_order', function(){
+		var pos = $('#jqm_more_to_order').attr('jqpos');
+		i_modal('.jqm_more_to_order', 'i_more_pos_to_order_'+pos, 'center', $(this));
+		return false;
+	});
+	// Условия покупки basket center
+	$('body').on('click', '.jq_m_i_system_in_stock', function(){
+		var pos = $('#jqm_more_stock').attr('jqpos');
+		i_modal('.jqm_more_stock', 'i_more_pos_stock_'+pos, 'center', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_m_i_system_expected', function(){
+		var pos = $('#jqm_more_stock').attr('jqpos');
+		i_modal('.jqm_more_expected', 'i_more_pos_expected_'+pos, 'center', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_m_i_system_to_order', function(){
+		var pos = $('#jqm_more_stock').attr('jqpos');
+		i_modal('.jqm_more_to_order', 'i_more_pos_to_order_'+pos, 'center', $(this));
+		return false;
+	});
+	// Условия покупки basket middle
+	$('body').on('click', '.jq_i_system_in_stock', function(){
+		i_modal('.jqm_more_stock', 'i_more_pos_stock_m', 'bottom', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_i_system_expected', function(){
+		i_modal('.jqm_more_expected', 'i_more_pos_stock_m', 'bottom', $(this));
+		return false;
+	});
+	$('body').on('click', '.jq_i_system_to_order', function(){
+		i_modal('.jqm_more_to_order', 'i_more_pos_stock_m', 'bottom', $(this));
+		return false;
+	});
+
+// ---------------------------------------------------------------------------------------------------- Modal window
+	// Закрытие окна
+	$('.jq_modal_close').click(function(){
+		$('.jq_modal, .jq_opacity, .jq_reviews_reply_form').fadeOut(400);
+	});
+// ---------------------------------------------------------------------------------------------------- Modal window
+	// Закрытие окна
+	$('.jq_modal_close').click(function(){
+		$('.jq_modal, .jq_quick_order_modal, .jq_unit_quick_order_modal, .jq_opacity, .jq_reviews_reply_form').fadeOut(400);
+	});
+
+// ---------------------------------------------------------------------------------------------------- Авторизация
+	// Открыть авторизацию
+	$('body').on('click', '.jq_auth_personal', function(){
+		i_modal('.jqm_auth', 'i_pos_auth');
+		return false;
+	});
+	// Ошибки авторизации
+	if( $('.jq_auth_error').length > 0 )
+		i_modal('.jqm_auth', 'i_pos_auth');
+// ---------------------------------------------------------------------------------------------------- Регистрация
+	$('.jq_registration').click(function(){
+		i_modal('.jqm_regi', 'i_pos_regi');
+		return false;
+	});
+	// Ошибки регистрации
+	if( $('.jq_reg_error').length > 0 )
+		i_modal('.jqm_regi', 'i_pos_regi');
+// ---------------------------------------------------------------------------------------------------- Delivery
+	$('.jq_fpay').click(function(){
+		i_modal('.jqm_pay', $(this).attr('jq_id'));
+
+		return false;
+	});
+// ---------------------------------------------------------------------------------------------------- Payment
+	$('.jq_fdel').click(function(){
+		i_modal('.jqm_del', $(this).attr('jq_id'));
+
+		return false;
+	});
+// ---------------------------------------------------------------------------------------------------- Map Footer
+	/*$('.jq_fmap').click(function() {
+		if ($(this).attr('jq_id') == 'i_pos_map') i_modal('.jqm_map', $(this).attr('jq_id'));
+		else i_modal('.jqm_map', 'i_bpos_map', 'bottom', $(this));
+		if ($('.jqm_map[jqmapy]').length) // если карты Яндекс, вызовим их!
+		{
+			$('.jqm_map[jqmapy]').each(function(indx) {
+				var map_id = $(this).attr('jqmapy');
+				ymaps.ready(eval(map_id));
+			});
+		}
+		if ($('.jqm_map[jqmapg]').length) // если карты Google, вызовим их!
+		{
+			$('.jqm_map[jqmapg]').each(function(indx) {
+				var map_id = 'init_' + $(this).attr('jqmapg');
+				var pla_id = 'BXShowMap_' + $(this).attr('jqmapg');
+				BX.ready(eval(map_id));
+				BX.ready(eval(pla_id));
+			});
+		}
+		if ($('.jq_fmap_div.ivhid').length) $('.jq_fmap_div.ivhid').removeClass('ivhid').filter(function(i) {
+			return i != 0
+		}).hide();
+		return false;
+	 });*/
+
+// ---------------------------------------------------------------------------------------------------- basket modal
+	/*$('.jq_ba_fpay').click(function(){
+		if( $(this).attr('jq_basket') == 'Y' )
+			var d_id = 'i_pos_bfpay';
+		else
+			var d_id = 'i_pos_fpay';
+		i_modal('.jqm_fpay', d_id, 'bottom', $(this));
+		return false;
+	});
+	$('.jq_ba_dmet').click(function(){
+		if( $(this).attr('jq_basket') == 'Y' )
+			var d_id = 'i_pos_bdmet';
+		else
+			var d_id = 'i_pos_dmet';
+		i_modal('.jqm_dmet', d_id, 'bottom', $(this));
+		return false;
+	});*/
+// ---------------------------------------------------------------------------------------------------- Feedback
+	$('.jq_hfeedback').click(function(){
+		i_modal('.jqm_feedback', 'i_pos_feedback');
+		return false;
+	});//i_modal('.jqm_feedback', 'i_pos_feedback');
+
+// ---------------------------------------------------------------------------------------------------- Delivery
+
+	$('body').on('click', '.jq_ad_fpay', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_ad_fpay');
+		i_hide();
+		return false;
+	});
+	
+	$('body').on('click', '.jq_ad_fdel', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_ad_fdel');
+		i_hide();
+		return false;
+	});
+
+	$('body').on('click', '.jq_h_feedback', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_feedback');
+		i_hide();
+		return false;
+	});
+
+	$('body').on('click', '.j_ad_fmap', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#j_ad_fmap');
+		i_hide();
+
+		if ($('ymaps').length > 0)
+		{
+			//console.log('work');
+		}else{
+			var myMap = '';
+			ymaps.ready(map);
+		}
+
+		return false;
+	});
+
+	$('body').on('click', '.jq_ba_fpay', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_ba_fpay');
+		i_hide();
+		return false;
+	});
+
+	$('body').on('click', '.jq_ba_dmet', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_ba_dmet');
+		i_hide();
+		return false;
+	});
+
+	$('body').on('click', '.jq_fp_auth_personal', function() {
+		$(this).siblings('.i_modal').fadeToggle();
+		i_close('#jq_fp_auth_personal');
+		i_hide();
+		return false;
+	});
+
+	$('body').on('click', '.j_modal_close', function() {
+		$('.j_modal').hide();
+	});
+	$(document).on('click', function(e) {
+		if (!$(e.target).closest('.j_modal').length) {
+			$('.j_modal').hide();
+		}
+		e.stopPropagation();
+	});
+	$(document).click(function(ev) {
+		if ( ($(ev.target).parents().filter('.jq_modal, .jq_quick_order_modal, .jq_unit_quick_order_modal, .jq_teaser_i_modal, .i_v_menu_sub_wrap, .i_v_menu_content').length != 1) && ($(ev.target).filter('.jq_modal, .jq_quick_order_modal, .jq_unit_quick_order_modal, .jq_teaser_i_modal, .i_v_menu_sub_wrap, .i_v_menu_content').length != 1) ){
+			$('.jq_modal, .jq_quick_order_modal, .jq_unit_quick_order_modal').fadeOut(400);
+			$('.i_v_menu_sub_wrap').fadeOut(400).parents().find('.jq_v_submenu').removeClass('select');
+		}
+	});
+// ---------------------------------------------------------------------------------------------------- Reviews
+	/*$('.jq_add_review').click(function(){
+	 $('.jq_reviews_reply_form').fadeIn();
+	 i_opacity();// Показать тень
+	 });
+	 $('.jq_reviews_buttom').click(function(){
+	 i_hide();
+	 });*/
+	$('body').on('click', '.jq_add_review', function(){
+		$('.jq_product_ajax').val( $(this).attr('jq_product_ajax') );
+		$('.jq_approval_reviews').val( $(this).attr('jq_approval_reviews') );
+		i_modal('.jqm_review', 'i_pos_review', 'top', $(this));
+		return false;
+	});
+// ---------------------------------------------------------------------------------------------------- [To order]
+	$('body').on('click', '.jq_order_buy', function(){
+		var id			= $(this).attr('jq_item_id');// id
+
+		if( id )
+		{
+			if( $('.jq_select_offers').length )
+				$('.jq_select_offers').stop().hide(0);
+
+			var name	= $(this).attr('jq_item_name');
+
+			$('.jqm_to_order').find('.jq_item_name').text(name);
+			$('.jqm_to_order').find('[name="id"]').val(id);
+			i_modal('.jqm_to_order', 'i_pos_to_order', 'top', $(this));
+			return false;
+		} else {
+			$('.jq_select_offers').fadeIn(400)
+				.delay(10000).fadeOut(400);
+		}
+	});
+});

@@ -1,0 +1,4 @@
+«ILab-Shop» - online store for the sale of appliances and computer equipment at the lowest prices.<br>
+The shop offers a fast and free delivery in the cities of Almaty and Astana, as well as cheap, but fast delivery courier in all regions of Kazakhstan.<br><br>
+The shop opened in 2012, and during that time has established itself as a reliable vendor and partner.<br><br>
+All products sold in the online store «iLab-Shop», has an official guarantee from the manufacturer. Always available for at least 10 000 products of different categories. The range is updated daily, as well as updated with new releases.

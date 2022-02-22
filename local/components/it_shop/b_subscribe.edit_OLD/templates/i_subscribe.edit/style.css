@@ -1,0 +1,46 @@
+div.subscribe-edit .red { color:red }
+div.subscribe-edit .green { color:green }
+div.subscribe-edit .errorcolor { color:red }
+div.subscribe-edit .successcolor { color:green }
+
+.subscription form:not(:first-child) {
+	margin-top: 20px;
+}
+.subscription-form,
+.subscription-utility {
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.subscription-layout-col:first-child {
+	width: 90px;
+}
+.subscription-layout-row:not(:first-child) {
+	margin-top: 20px;
+}
+.subscription-rubric:not(:first-child) {
+	margin-top: 10px;
+}
+.subscription-rubric span {
+	display: block;
+	margin-left: 22px;
+}
+.subscription-notes,
+.subscription-format,
+.subscription-buttons {
+	margin-top: 15px;
+}
+@media screen and (min-width: 601px) {
+	.subscription-layout-row {
+		display: table;
+		width: 100%;
+	}
+	.subscription-layout-col {
+		display: table-cell;
+	}
+}
+@media screen and (max-width: 600px) {
+	.subscription-layout-col {
+		margin-top: 10px;
+	}
+}

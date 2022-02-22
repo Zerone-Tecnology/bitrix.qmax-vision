@@ -1,0 +1,74 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"О компании", 
+		"/about_us/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Новости", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Акции", 
+		"/action/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гарантия", 
+		"/warranty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Оплата", 
+		"/payment/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка", 
+		"/delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Публичная оферта", 
+		"/publichnaya-oferta/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Анкета", 
+		"/feedback/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Регламент ТБ", 
+		"/reglament-tb/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

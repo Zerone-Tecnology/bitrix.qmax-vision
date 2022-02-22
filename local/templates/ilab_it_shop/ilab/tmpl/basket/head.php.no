@@ -1,0 +1,42 @@
+<?if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED!==true)die();
+// ---------------------------------------------------------------------------------------------------- iLaB PowereD?>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+		<title><?$APPLICATION->ShowTitle()?></title>
+		<?CJSCore::Init();?>
+
+		<link sizes="32x32" type="images/x-icon" href="<?=SITE_TEMPLATE_PATH?>/ilab/img/icon/favicon.png" rel="icon">
+		<link type="images/x-icon" href="<?=SITE_TEMPLATE_PATH?>/ilab/img/icon/favicon.ico" rel="shortcut icon">
+
+		<?use \Bitrix\Main\Page as BMPage;
+
+		// CSS
+		BMPage\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/tmpl/css/normalize.css');
+		BMPage\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/tmpl/css/reset.css');
+		BMPage\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/tmpl_b/css/style.css');
+		BMPage\Asset::getInstance()->addCss(SITE_TEMPLATE_PATH.'/tmpl_b/css/color/c_ilabshop.css');
+		// JS
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.min.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.formstyler.min.js.no');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/idangerous.swiper.min.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.form.min.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.fancybox.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.fancybox.thumbs.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.cookie.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/functions.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/script.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/ab_script.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/inputmask.min.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/inputmask.extensions.min.js');
+		BMPage\Asset::getInstance()->addJs(SITE_TEMPLATE_PATH.'/tmpl/js/jquery.inputmask.min.js');
+
+		// PHP
+		require_once($_SERVER['DOCUMENT_ROOT'].SITE_TEMPLATE_PATH.'/tmpl/php/functions.php');?>
+<?/*
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" href="<?=SITE_TEMPLATE_PATH?>/tmpl_b/css/color/c_rahat.css">
+*/?>

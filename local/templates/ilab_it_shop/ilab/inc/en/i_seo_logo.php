@@ -1,0 +1,1 @@
+<img title="iLab Shop" src="<?=SITE_TEMPLATE_PATH?>/ilab/img/logo/logo_seo.png" alt="iLab Shop">

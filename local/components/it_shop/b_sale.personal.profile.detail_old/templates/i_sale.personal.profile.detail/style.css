@@ -1,0 +1,54 @@
+.i_but_ou_profile_detail
+{
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	display: inline-block;
+}
+.i_profile_detail {
+	margin-top: 20px;
+}
+.sale_personal_profile_detail
+{
+	max-width: 620px;
+}
+.i_profile_detail h3 { color: #272a2a }
+.i_profile_detail .i_pro_det_dashed { border-bottom: 1px dashed #C4C4C4 }
+
+.req{color:red;}
+.sale_personal_profile_detail_title
+{
+	margin-top: 20px;
+}
+.sale_personal_profile_detail_col input[type='submit']
+{
+	padding: 10px 20px;
+	border: 0 none;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+@media screen and (min-width: 640px)
+{
+	.sale_personal_profile_detail_row
+	{
+		display: table;
+		width: 100%;
+	}
+	.sale_personal_profile_detail_col
+	{
+		display: table-cell;
+		width: 50%;
+	}
+	.i_profile_detail .sale_personal_profile_detail_col { padding: 10px }
+}
+@media screen and (max-width: 639px)
+{
+	.i_profile_detail .sale_personal_profile_detail_col { padding: 5px 0; }
+	.jq-selectbox
+	{
+		width: 100%;
+	}
+}

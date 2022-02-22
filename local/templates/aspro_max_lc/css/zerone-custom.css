@@ -1,0 +1,33 @@
+p.i_typical_p {}
+ul.i_typical_ul {
+	color: #333333;
+}
+table.i_typical_table {}
+
+.i_snippets_grey_paragraph{
+	background-color: #f3f3f3;
+	padding: 30px 20px;
+}
+.i_typical_text_center{
+	text-align: center;
+	font-family: "Roboto Bold";
+	font-size: 18px;
+}
+.i_typical_li_top{
+	margin-top: 30px !important;
+}
+.i_typical_ul_number{
+	list-style-type:decimal;
+}
+
+
+﻿.i_typical_ul_number li{
+	color: #f75b18;
+}
+ol.i_typical_ol > li:before{
+	color: #f75b18;
+}
+
+.j_form_result_new .fi_form input[type='text'] {
+    width:100%;
+}

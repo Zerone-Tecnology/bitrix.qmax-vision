@@ -1,0 +1,1 @@
+<img alt="Qmax-vision.kz " src="/local/templates/ilab_it_shop/ilab/img/logo/qmax.svg" title="Qmax-vision.kz ">

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Webmoney";
+$arDirProperties = Array(
+
+);
+?>

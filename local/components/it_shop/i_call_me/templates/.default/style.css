@@ -1,0 +1,119 @@
+.i_call_me {
+	position: fixed;
+	right: 98px;
+	bottom: 35px;
+	z-index: 100000;
+}
+.i_call_me_wrap{
+	position: relative;
+}
+.i_call_me_form_wrap {
+	display: none;
+	position: absolute;
+	bottom: 84px;
+	width: 450px;
+	right: -98px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.i_call_me_form_tt {
+	background: #008048;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 50px 15px 67px;
+	font-size: 130%;
+	border-bottom: 7px solid #006c3e;
+	position: relative;
+}
+.i_call_me_form_tt_icon {
+	position: absolute;
+	left: 20px;
+	top: 10px;
+	width: 32px;
+	height: 32px;
+	background: url(https://www.qmax-vision.kz/local/templates/ilab_it_shop/ilab/img/svg/telephone.svg) center center no-repeat;
+	background-size: 70%;
+	border-radius: 100%;
+	border: 2px solid white;
+}
+
+.i_call_me_form_tt_str_icon {
+	position: absolute;
+	right: 20px;
+	top: 12px;
+	width: 25px;
+	height: 25px;
+	background: url(https://www.bcc.kz/local/tmpl/img/svg/str_white_r.svg) center center no-repeat;
+	background-size: 30%;
+	border-radius: 100%;
+	border: 1px solid white;
+}
+
+ .i_call_button_str_icon {
+	 position: absolute;
+	 right: 45px;
+	 bottom: 25px;
+	 width: 25px;
+	 height: 25px;
+	 background: url(https://www.bcc.kz/local/tmpl/img/svg/str_white_r.svg) center center no-repeat;
+	 background-size: 30%;
+	 border-radius: 100%;
+ }
+
+.i_call_me_icon {
+	width: 65px;
+	height: 65px;
+	border-radius: 100%;
+	background: url(https://smartcall.kz/widgets/v1/images/phone-icon2.png) center center no-repeat;
+	background-size: 55%;
+	cursor: pointer;
+	background-color: #00A069;
+}
+.i_call_me_form_cnt {
+	background: #f9f6f3;
+	padding: 20px 40px 20px 80px;
+}
+.i_message {
+	border: 1px solid #efefef;
+	background-color: #efefef;
+	padding: 20px;
+}
+.i_message:not(:first-child) {
+	margin-top: 20px;
+}
+
+.i_call_me_form_dialog_cnt{
+	margin-bottom: 20px;
+}
+
+.i_call_me_form_button {
+	color: #fff;
+	font-family: Segoe UI, Arial, sans-serif;
+	background: #d8ac78 !important;
+	padding: 10px 35px !important;
+	right: 20px;
+	top: 10px;
+	border: 0 none !important;
+	border-radius: 0  !important;
+	cursor: pointer;
+	position: absolute;
+	top: 136px;
+	right: 40px;
+	height: 39px;
+}
+
+.i_call_input{
+	position: relative;
+}
+
+@media screen and (max-width: 1000px){
+	.i_call_form_dialog{
+		display: none;
+	}
+	.i_call_me_form_cnt {
+		padding: 30px 20px 30px 70px;
+	}
+	.i_call_me_form_button {
+		top: 90px;
+		right: 20px;
+	}
+}

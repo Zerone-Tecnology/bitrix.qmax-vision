@@ -1,0 +1,1 @@
+<a href="mailto:info@smartstore.kz">info@smartstore.kz</a>

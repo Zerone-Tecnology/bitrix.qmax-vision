@@ -1,0 +1,19 @@
+@media screen and (max-width: 480px) {
+	.i_pay,
+	.i_del {
+		display: none;
+	}
+}
+@media screen and (min-width: 1370px) {
+	.i_pay,
+	.i_del {
+		position: absolute;
+		top: 30px;
+	}
+	.i_pay {
+		left: 730px;
+	}
+	.i_del {
+		left: 900px;
+	}
+}

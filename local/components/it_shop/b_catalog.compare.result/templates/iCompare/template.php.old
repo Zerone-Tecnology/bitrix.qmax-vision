@@ -1,0 +1,142 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+use \Bitrix\Main\Localization\Loc;
+$l='ru';
+//	---------------------------------------------------------------------------------------------------- iLaB PowereD
+if( $arResult['ITEMS'] ):?>
+
+	<!-- scrollBar -->
+	<div class="ilab_pag_hor">
+		<div class="ilab_ct_characteristics"><?=Loc::getMessage('COMP_CHARACTERISTICS',false,$l);?></div>
+		<div class="ilab_ph_left j_ph_left idnone"></div>
+		<div class="ilab_ph_scroll j_ph_scroll"></div>
+		<div class="ilab_ph_right j_ph_right idnone"></div>
+	</div>
+	<div class="ilab_pag_ver">
+		<div class="ilab_pv_top j_pv_top idnone"></div>
+		<div class="ilab_pv_scroll j_pv_scroll"></div>
+		<div class="ilab_pv_bottom j_pv_bottom idnone"></div>
+	</div>
+	<!-- scrollBar -->
+
+	<div class="swiper-container ilab_products j_products"><div class="swiper-wrapper">
+			<!-- Product -->
+					<div class="swiper-slide ilab_pinfo j_pinfo">
+						<div class="ilab_ct_product"><?=Loc::getMessage('COMP_PRODUCT',false,$l)?></div>
+						<div class="ilab_ct_incompare"><?=Loc::getMessage('COMP_IN_COMPARE',false,$l)?></div>
+						<div class="ilab_ct_count">
+							<span class="j_comp_count" data-message='["<?=implode('","', Loc::getMessage('COMP_DEC_PRODUCT',false,$l))?>"]'>
+								<?=i_declOfNum(count($arResult['ITEMS']), Loc::getMessage('COMP_DEC_PRODUCT',false,$l))?>
+							</span>
+						</div>
+					</div>
+				<?foreach($arResult['ITEMS'] as $k=>$e):?>
+					<div class="swiper-slide ilab_pitem">
+						<div class="ilab_i_remove_compare j_remove_compare" data-id="<?=$e['ID']?>" data-iblock_id="<?=$e['IBLOCK_ID']?>"><span><?=Loc::getMessage('COMP_REMOVE',false,$l)?></span></div>
+						<div class="aclear iprel">
+							<a class="ilab_i_image swiper-lazy ifleft" href="<?=$e['DETAIL_PAGE_URL']?>" style="background-image: url(<?=$e['I_PICTURE']?>)"></a>
+							<div class="ilab_i_price">
+
+
+<?if( $e['MIN_PRICE'] && $e['MIN_PRICE']['CAN_ACCESS'] ):// Цена [MIN_PRICE]
+	$pr = preg_split('/\s(?=[^0-9])/', $e['MIN_PRICE']['PRINT_DISCOUNT_VALUE']);// массивы вида [0]=>88 990,00 [1]=>тг.
+
+	if ( $e['MIN_PRICE']['DISCOUNT_VALUE'] < $e['MIN_PRICE']['VALUE'] ):// Скидка?>
+		<s class="i_pr_disc ipabs"><?=$e['MIN_PRICE']['PRINT_VALUE']?></s>
+	<?elseif( $pr_max = i_price($e['PRICES'], $e['MIN_PRICE']['DISCOUNT_VALUE']) ):// или вычислим самую наибольшую цену?>
+		<s class="i_pr_disc ipabs"><?=$e
+		['PRICES'][$pr_max]['PRINT_VALUE']?></s>
+	<?endif?>
+
+	<span class="i_pr<?if( strlen($e['MIN_PRICE']['DISCOUNT_VALUE'])>9 )echo ' ifont120'?>"><?=$pr[0]?></span>&nbsp;<span class="i_tg"><?=$pr[1]?></span>
+	<?/*<span class="i_measure"> / <?=$e['CATALOG_MEASURE_NAME']?></span>*/?>
+<?elseif( $e['PRINT_MIN_OFFER_PRICE'] ):?>
+	<?// Максимальная цена [MAXIMUM_PRICE] v2.0
+	if( $e['MIN_OFFER_PRICE']
+		&& $arParams['I_MAX_PROP_PRICE']=='Y'
+		&& $e['PROPERTIES']['MAXIMUM_PRICE']['VALUE']
+
+		&& !$e['HIDE_MAX_OFFERS_PRICE'] ):?>
+		<s class="i_pr_disc ipabs"><?=CurrencyFormat($e['PROPERTIES']['MAXIMUM_PRICE']['VALUE'], $arOption['I_BASE_CURRENCY'])?></s>
+	<?endif?>
+
+	<span class="i_pr_from"><?=Loc::getMessage('FROM',false,$l)?></span>&nbsp;<span class="i_pr<?if( strlen($e['MIN_OFFER_PRICE'])>7 )echo ' ifont130'?>"><?=$e['PRINT_MIN_OFFER_PRICE']?></span>
+	<span> / <?=$e['CATALOG_MEASURE_NAME']?></span>
+<?else:
+	echo '<div class="i_noprice">Нет цены.</div>';
+endif?>
+
+
+							</div>
+							<div class="ilab_i_buy">
+
+
+<!-- Кнопка купить -->
+<?if( $e['I_TRADE_OFFERS'] ):?>
+	<a href="<?=$e['DETAIL_PAGE_URL']?>" class="i_buy_buttom i_bdetail"><?=Loc::getMessage('READ_MORE',false,$l)?></a>
+<?elseif( $e['CATALOG_QUANTITY']>0 && $e['PRICES'] ):?>
+	<a href="<?=$e['BUY_URL']?>" class="i_buy_buttom jq_buy" jq_id="<?=$e['ID']?>" jqcount="<?=$e['CATALOG_MEASURE_RATIO']?>"><?=Loc::getMessage('BUY',false,$l)?></a>
+    <a href="<?=SITE_DIR?>personal/basket.php" class="i_buy_bought jq_bought idn">
+        <span class="i_text"><?=GetMessage('IN_BASKET')?>:</span>&nbsp;
+        <span class="i_m_ratio j_m_ratio"><?=$e['CATALOG_MEASURE_RATIO']?></span>&nbsp;
+        <span class="i_m_name j_m_name"><?=$e['CATALOG_MEASURE_NAME']?></span>
+    </a>
+	<div class="i_delete_item jq_delete_item idnone" jqid="<?//=$e['ID']?>"></div>
+	<div class="i_buy_succes jq_buy_succes ipabs idnone">
+		<div class="i_bs_close jq_bs_close ifont170 ipabs">&times;</div>
+		<?=Loc::getMessage('ADD_BASKET_SUCCES',false,$l)?>
+	</div>
+<?elseif( $e['PRICES'] ):?>
+	<a class="i_buy_buttom i_sec_to_order" href="<?=$e['DETAIL_PAGE_URL']?>"><?=Loc::getMessage('TO_ORDER',false,$l)?></a>
+<?endif?>
+<!-- Кнопка купить -->
+
+
+							</div>
+						</div>
+						<a class="ilab_i_name" href="<?=$e['DETAIL_PAGE_URL']?>"><?=$e['NAME']?></a>
+					</div>
+				<?endforeach?>
+			<!-- Product -->
+
+			<!-- Property -->
+				<div class="swiper-container ilab_property j_property"><div class="swiper-wrapper">
+					<?if($arResult['I_PRO']):
+						foreach($arResult['I_PRO'] as $nameProp=>$arProp):?>
+							<div class="swiper-slide">
+
+								<div class="ilab_prop_name"><?=$nameProp?></div>
+								<?foreach($arProp as $pk=>$pv):?>
+									<div class="ilab_prop_value j_prop_value" data-id="<?=$pk?>">
+										<div class="ilab_prop_w">
+											<?if( is_array($pv) )// Если множественный список
+												foreach ($pv as $ik=>$ipro)
+													{
+													if( $ik!=0 )
+														echo ', ';
+													echo $ipro;
+												}
+											else// Одно значение
+												echo $pv;?>
+										</div>
+									</div>
+								<?endforeach?>
+
+							</div>
+						<?endforeach;
+					else:?>
+						<div class="swiper-slide"><div class="ilab_prop_empty"><?=Loc::getMessage('COMP_CHARACTERISTICS_NO',false,$l)?></div></div>
+					<?endif?>
+				</div></div>
+			<!-- Property -->
+	</div></div>
+
+<?endif
+//	---------------------------------------------------------------------------------------------------- iLaB PowereD?>
+
+
+
+
+
+<?/*if($USER->isAdmin()):?>
+	<pre><?print_r($arResult)?></pre>
+<?endif*/?>

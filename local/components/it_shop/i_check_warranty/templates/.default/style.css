@@ -1,0 +1,43 @@
+.i_check_warranty {
+	text-align: center;
+}
+.i_check_warranty_form {
+	display: inline-block;
+	width: 100%;
+	max-width: 580px;
+}
+.i_check_warranty_form_submit {
+	background-color: #f75b18;
+	padding: 10px 20px;
+	color: #fff;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.i_check_warranty_form_input:not(:first-child) {
+	margin-top: 10px;
+}
+.i_wrapper .i_check_warranty_form_input input[type='text'] {
+	padding: 15px 20px;
+	font-size: 18px;
+}
+.i_check_warranty_response {
+	padding: 20px;
+	margin-top: 10px;
+	color: #28a745 !important;
+	font-size: 166%;
+	font-weight: bold;
+	border: 1px solid #c3e6cb;
+	border-radius: 5px;
+}
+.i_check_warranty_response.i_error {
+	color: #f00 !important;
+	border: 1px solid #f75b18;
+}
+
+@media screen and (min-width: 380px) {
+	.i_wrapper .i_check_warranty_form_input input[type='text'] {
+		text-align: center;
+		text-transform: uppercase;
+	}
+}

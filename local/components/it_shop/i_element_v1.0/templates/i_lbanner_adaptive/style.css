@@ -1,0 +1,25 @@
+.i_lbanner_img
+{
+	background-size: cover;
+}
+@media screen and (min-width: 1060px)
+{
+	.i_lbanner_img
+	{
+		padding-top: 150%;
+	}
+}
+@media screen and (min-width: 721px) and (max-width: 1024px)
+{
+	.i_lbanner_img
+	{
+		padding-top: 25%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 720px)
+{
+	.i_lbanner_img
+	{
+		padding-top: 75%;
+	}
+}

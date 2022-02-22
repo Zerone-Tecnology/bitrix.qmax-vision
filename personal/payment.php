@@ -1,0 +1,9 @@
+<?require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php');
+$APPLICATION->SetTitle("Счет");
+$APPLICATION->IncludeComponent(
+	"it_shop:b_sale.order.payment",
+	"",
+	Array(
+	)
+);
+require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/epilog_after.php');?>

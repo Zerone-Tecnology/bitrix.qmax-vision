@@ -1,0 +1,18 @@
+<?$APPLICATION->IncludeComponent(
+	"it_shop:i_to_order_v1.0", 
+	".default", 
+	array(
+		"IBLOCK_TYPE" => "form",
+		"IBLOCK_ID" => "12",
+		"FORM_ID" => "925",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "3600000",
+		"COMPONENT_TEMPLATE" => ".default",
+		"I_PERSON" => "1",
+		"I_PAY_SYSTEM" => "1",
+		"I_DELIVERY" => "1",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO"
+	),
+	false
+);?>

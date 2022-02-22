@@ -1,0 +1,178 @@
+.i_subscription_edit .i_se_form, .i_subscription_edit .i_se_utility {
+    /*background-color: #ededed;*/
+    padding: 20px;
+    /*border-radius: 5px;*/
+    /*margin-top: 20px;*/
+}
+.i_subscription_edit .i_se_utility {
+    margin-top: 20px;
+}
+.i_subscription_edit .i_se_field_name {
+    width: 90px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.i_subscription_edit .i_se_field {
+    display: flex;
+}
+
+@media screen and (max-width: 560px) {
+    .i_subscription_edit .i_se_field {
+        flex-flow: column;
+    }
+
+    .i_subscription_edit .i_se_rubric {
+        margin: 0px 0px 20px 0px !important;
+    }
+}
+
+.i_subscription_edit {
+    color: #111212;
+}
+
+.i_subscription_edit .i_se_field_form {
+    flex: 1;
+}
+
+.i_subscription_edit .i_se_field.i_se_o .i_se_field_form > * {
+    margin-bottom: 20px;
+}
+
+.i_subscription_edit .i_se_rubric {
+    display: flex;
+    flex-flow: wrap;
+    margin: -10px -10px 0 0;
+    margin-bottom: 0px;
+}
+
+.i_subscription_edit .i_se_rubric .i_se_r_item {
+    margin: 10px 10px 0 0;
+}
+.i_subscription_edit .i_se_rubric .i_se_r_item label b {
+    text-transform: uppercase;
+}
+.i_subscription_edit .i_se_format label > label {
+    text-transform: uppercase;
+    font-family: "Roboto Bold", sans-serif;
+}
+.jq-checkbox {
+    border-radius: 3px;
+}
+
+.jq-checkbox, .jq-radio {
+    vertical-align: -4px;
+    width: 18px;
+    height: 18px;
+    margin: 0 4px 0 0;
+    border: 1px solid #E9E9E9;
+    background-color: white;
+    cursor: pointer;
+}
+
+.jq-checkbox, .jq-radio {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.i_subscription_edit .i_se_field.i_se_f .i_se_field_form {
+    display: flex;
+}
+
+.i_subscription_edit .i_se_field_form {
+    flex: 1;
+}
+
+.i_subscription_edit .i_se_field.i_se_f .i_se_field_form > :first-child {
+    max-width: 300px;
+}
+
+input[type="email"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="number"], select:not([multiple]) {
+    height: 40px;
+    box-sizing: border-box;
+}
+
+input[type="email"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], textarea {
+    padding: 10px 10px 11px;
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    font: 100% Arial, sans-serif;
+    color: #333;
+    width: 100%;
+}
+
+.i_subscription_edit .i_se_field.i_se_f .i_se_field_form > :not(:first-child) {
+    margin-left: 10px;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+    overflow: visible;
+    padding: 10px 30px;
+    border: 0 none;
+    background-color: #003b7f;
+    border-radius: 5px;
+    outline: none;
+    font: 100% Arial, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+.i_subscription_edit .i_se_info {
+    margin-bottom: 20px;
+}
+
+.i_subscription_edit .i_se_field {
+    display: flex;
+}
+
+.i_subscription_edit .i_se_field_name {
+    width: 90px;
+    padding-right: 10px;
+    font-weight: normal;
+    font-family: 'Roboto Bold', sans-serif;
+}
+
+.i_subscription_edit .i_se_confirmed {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid white;
+}
+
+.i_subscription_edit .i_se_confirmed .i_se_field {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    .i_subscription_edit .i_se_field_form {
+        flex-direction: column;
+        flex: 1 1;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .i_subscription_edit .i_se_field.i_se_f .i_se_field_form > :not(:first-child) {
+        margin: 10px 0px;
+    }
+
+    .i_subscription_edit .i_se_format b {
+        display: block;
+    }
+}
+
+.i_subscription_edit .i_se_format label {
+    display: inline-block;
+}
+
+.i_subscription_edit .i_se_format {
+    margin: -10px -10px 0 0;
+    margin-bottom: 0px;
+}
+
+.i_subscription_edit .i_se_format > * {
+    margin: 10px 10px 0 0;
+}

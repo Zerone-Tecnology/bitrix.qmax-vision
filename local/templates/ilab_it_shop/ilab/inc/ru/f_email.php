@@ -1,0 +1,1 @@
+<a href="mailto:qmaxvision@knc.kz">qmaxvision@knc.kz</a><br>

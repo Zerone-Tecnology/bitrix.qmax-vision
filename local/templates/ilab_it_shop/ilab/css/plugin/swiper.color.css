@@ -1,0 +1,56 @@
+/* ---------------------------------------------------------------------------------------------------- Swiper */
+span.swiper-pagination-bullet-active {
+	background: #4d4d4e;
+}
+span.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+}
+.swiper-container-horizontal ~ .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 4px;
+}
+
+.swiper-container-horizontal ~ .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+	-webkit-transition: 200ms left, 200ms -webkit-transform;
+	transition: 200ms left, 200ms -webkit-transform;
+	-o-transition: 200ms transform, 200ms left;
+	transition: 200ms transform, 200ms left;
+	transition: 200ms transform, 200ms left, 200ms -webkit-transform;
+}
+div.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+	-webkit-transform: scale(.6);
+	-ms-transform: scale(.6);
+	transform: scale(.6);
+}
+div.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next-next {
+	-webkit-transform: scale(.6);
+	-ms-transform: scale(.6);
+	transform: scale(.6);
+}
+div.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev,
+div.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
+	-webkit-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transform: scale(.8);
+}
+div.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.swiper-container-horizontal ~ .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+.swiper-container-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+	white-space: nowrap;
+}
+
+/* ---------------------------------------------------------------------------------------------------- Swiper destroy */
+.swiper-destroy .swiper-pagination,
+.swiper-destroy .swiper-button-prev,
+.swiper-destroy .swiper-button-next {
+	display: none;
+}
+.swiper-container.swiper-destroy .swiper-wrapper {
+    transform: translate3d(0px, 0, 0) !important;
+}

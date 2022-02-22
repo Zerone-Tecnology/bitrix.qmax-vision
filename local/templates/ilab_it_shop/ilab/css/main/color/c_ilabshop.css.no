@@ -1,0 +1,52 @@
+/* ---------------------------------------------- i_tblock */
+.i_tblock
+{
+	background-color: #f75b18;
+}
+.i_tm_a.i_more::after {
+	background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/down_white.svg);
+}
+.i_login_cabinet,
+.i_login_name,
+.i_log_sep
+{
+	color: #fff;
+}
+.i_sub_a 
+{
+	color: #000;
+}
+.i_sub_a:hover
+{
+	background-color: #f75b18;
+	color: #fff;
+}
+@media screen and (min-width: 640px)
+{
+	.i_tm_a
+	{
+		color: #fff;
+	}
+}
+@media screen and (max-width: 639px)
+{
+	.i_tm_a
+	{
+		color: #000;
+	}
+	.i_tm_a:hover,
+	.i_tm_selected,
+	.i_tm_hover
+	{
+		background-color: #f75b18;
+		color: #fff;
+	}
+	.i_sub_a_text:before
+	{
+		background-color: #f75b18;
+	}
+	.i_sub_a:hover .i_sub_a_text:before
+	{
+		background-color: #fff;
+	}
+}

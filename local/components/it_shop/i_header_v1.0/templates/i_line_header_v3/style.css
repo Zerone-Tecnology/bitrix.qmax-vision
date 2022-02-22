@@ -1,0 +1,276 @@
+.i_hlogo,
+.i_hcontact,
+.i_line_header_icons,
+.i_hbasket,
+.i_search_flat
+{
+	position: relative;
+}
+.i_login #title-search{
+	width: 200px;
+}
+.i_search form, .i_search_flat form
+{
+	display: flex;
+	background: #f3f3f3;
+	max-width: 290px;
+	/*width: 290px;*/
+}
+
+#title-search-input{
+	background: inherit;
+}
+.i_line_header_v3 .search-button
+{
+	border-left: 0 none;
+	background: #fff url(/local/templates/ilab_it_shop/ilab/img/svg/main/search.svg) center no-repeat;
+	background-size: 23px;
+	padding: 0;
+	font-size: 0;
+	display: block;
+	line-height: 0;
+	width: 40px;
+	border-radius: 0 5px 5px 0;
+}
+.i_line_header_v3 #title-search-input
+{
+	border-right: 0 none;
+	border-radius: 5px 0 0 5px;
+	width: 200px;
+}
+.i_line_header_icons .i_fmap
+{
+	text-decoration: none;
+	font-size: 14px;
+	padding: 10px 20px;
+}
+.i_line_header_icons .i_fmap span
+{
+	border-bottom: 1px dashed;
+}
+@media screen and (max-width: 1000px){
+	.i_line_header_icons .i_fmap span{
+		display: none;
+	}
+	.i_line_header_icons .i_fmap{
+		padding: 10px;
+	}
+}
+.i_hcontact {
+	font-size: 20px;
+}
+@media screen and (max-width: 820px){
+	.i_hcontact {
+		display: none;
+	}
+	.i_hcontact a:before{
+		top: 8px;
+	}
+}
+.i_hbask
+{
+	text-decoration: none;
+}
+.i_hbask_cont
+{
+	position: relative;
+	margin-left: 40px;
+}
+.i_hbask_cont:before
+{
+	content: '';
+	position: absolute;
+	left: -65px;
+	bottom: 0;
+	width: 65px;
+	top: 0;
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/main/basket.svg) no-repeat;
+	background-size: 56px 40px;
+	background-position: left center;
+}
+.i_hbask_cont b
+{
+	display: none;
+}
+.i_hbask_pieces
+{
+	white-space: nowrap;
+	font-size: 13px;
+}
+.i_hbask_name
+{
+	display: none;
+}
+.jq_basket_co
+{
+	color: #f75b18 !important;
+	font-size: 22px;
+}
+.jq_basket_pr
+{
+	font-size: 15px;
+}
+.i_fmap
+{
+	position: relative;
+	padding-left: 35px;
+}
+.i_fmap:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 35px;
+	background-position: left center;
+	background-repeat: no-repeat;
+}
+.i_fmap.i_del
+{
+	margin-left: 20px;
+}
+.i_fmap.i_pay:before
+{
+	background-image: url("/local/templates/ilab_it_shop/ilab/img/svg/main/pay.svg");
+	background-size: 26px 25px;
+	left: -20px;
+}
+.i_line_header_icons_item span {
+	color: #111212;
+}
+.i_fmap.i_del:before
+{
+	background-image: url("/local/templates/ilab_it_shop/ilab/img/svg/main/del.svg");
+	background-size: 26px 23px;
+	left: -15px;
+}
+.i_line_header_icons
+{
+	display: flex;
+}
+@media screen and (min-width: 481px)
+{
+	.i_line_header_v3
+	{
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 1200px)
+{
+	.i_line_header_v3
+	{
+		/*padding-bottom: 50px;*/
+	}
+	.i_line_header_search
+	{
+		/*position: absolute;
+		bottom: 20px;
+		left: 0;
+		right: 0;*/
+	}
+	.i_line_header_v3 #title-search-input{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 900px)
+{
+	.i_line_header_search {
+		right: 250px;
+	}
+	/*.i_line_header_icons
+	{
+		position: absolute;
+		bottom: 30px;
+		right: 0;
+	}
+	*/
+	.i_hbasket
+	{
+		/*margin-left: 60px;*/
+	}
+}
+@media screen and (max-width: 560px)
+{
+	.i_fmap span
+	{
+		display: none;
+	}
+	.i_line_header_search {
+		right: 100px;
+	}
+	.i_line_header_icons .i_fmap
+	{
+		padding: 10px;
+	}
+	.i_line_header_v3
+	{
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		align-items: center;
+	}
+	#i_pos_pay, #i_pos_del{
+		margin-top: 10px;
+	}
+	.i_hlogo
+	{
+		flex: 2;
+	}
+	.i_hlogo img
+	{
+		width: 100%;
+	}
+	.i_line_header_v3
+	{
+		padding-bottom: 20px;
+		flex-wrap: wrap;
+		/*justify-content: space-around;*/
+	}
+	.i_line_header_v3 .i_line_header_icons{
+		width: 100%;
+		order: 1;
+		text-align: center;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.i_line_header_v3 .i_hbasket {
+		margin-left: 40px;
+	}
+
+	.i_fmap.i_pay:before,
+	.i_fmap.i_del:before {
+		width: 35px;
+		background-size: 100%;
+		left: 0;
+	}
+	.i_line_header_icons .i_fmap {
+		width: 40px;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.i_hlogo
+	{
+		width: 100%;
+		flex: unset;
+	}
+
+	.i_hbask_cont {
+		min-height: 35px;
+	}
+
+	.i_hbask_cont:before {
+		left: -50px;
+		background-size: unset;
+	}
+
+	.i_line_header_v3 .i_line_header_icons {
+		width: 50%;
+		justify-content: space-between;
+		order: unset;
+	}
+}

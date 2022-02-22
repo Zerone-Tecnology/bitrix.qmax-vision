@@ -1,0 +1,53 @@
+/* Relative background */
+/*body { background: url(/local/templates/ilab_it_shop/ilab/img/fon/background.png) repeat-y center top #EEF2F5 }*/
+/* Fixed background */
+/*
+body::before {
+	background: url(/local/templates/ilab_it_shop/ilab/img/fon/background.png) repeat-y scroll center top #F1F1F1;
+	content: '';
+	position: fixed;
+	height: 100%; width: 100%;
+}
+	.i_wrapper {
+		background-color: #FFF;
+		position: relative;
+		padding: 0 20px;
+		width: 1300px;
+		margin: 0 auto;
+
+	-webkit-box-shadow:  0 0 10px rgba(0, 0, 0, 0.2);
+	   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+	.i_tblock {
+		width: 1300px;
+		margin: 0 auto;
+		background-color: #222;
+	}*/
+
+/*
+body {
+	background: url(/local/templates/ilab_it_shop/ilab/img/fon/background.png) repeat-y scroll center top;
+}
+.i_wrapper {
+	background-color: #fff;
+	max-width: 1370px;
+	margin: 0 auto;
+}*/
+/*
+body::before {
+	background: url(/local/templates/ilab_it_shop/ilab/img/fon/background.png) repeat-y scroll center top;
+	content: '';
+	position: fixed;
+	height: 100%; width: 100%;
+}*/
+.i_tblock, .i_wrapper {
+	position: relative;
+	max-width: 1330px;
+	margin: 0 auto;
+}
+.i_wrapper {
+	background-color: #fff;
+	max-width: 1330px;
+	margin: 0 auto;
+}

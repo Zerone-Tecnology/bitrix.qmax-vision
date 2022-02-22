@@ -1,0 +1,1 @@
+Fast order by default is issued to a private person with <b>payment by cash or by self</b> of the &nbsp; g. Almaty

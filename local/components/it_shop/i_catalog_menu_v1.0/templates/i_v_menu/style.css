@@ -1,0 +1,37 @@
+.i_vsub_1
+{
+	width: 800px;
+	padding: 10px;
+}
+.i_vmenu_div_2
+{
+	position: absolute;
+}
+/* ---------------------------------------------- without i_item */
+.i_vsub_1.i_col_4 .i_vmenu_div_2
+{
+	width: 23%;
+}
+.i_vsub_1.i_col_3 .i_vmenu_div_2
+{
+	width: 32%;
+}
+.i_vsub_1.i_col_2 .i_vmenu_div_2
+{
+	width: 45%;
+}
+/* ---------------------------------------------- with i_item */
+.i_vsub_1.i_vsub_item
+{
+	min-height: 430px;
+}
+.i_vsub_1.i_vsub_item .jq_ver_shapeshift
+{
+	margin-right: 240px;
+}
+.i_vsub_1 .i_item {
+	position: absolute;
+	right: -240px;
+	width: 230px;
+	height: 425px;
+}

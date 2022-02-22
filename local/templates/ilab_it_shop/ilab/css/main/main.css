@@ -1,0 +1,86 @@
+html {
+	/*position: relative;
+	height: 100%;*/
+
+	overflow-x: hidden;
+	font-size: 14px;
+}
+body{
+	position: relative;
+	background-color: #ffffff;
+	overflow: hidden;
+}
+body.i_index_page{
+	background-color: #ededed;
+}
+body .page.i_personal_page{
+	position: relative;
+}
+
+/* ---------------------------------------------------------------------------------------------------- Wrapper */
+.i_wr {
+	margin: 0 auto;
+	max-width: 1330px;
+	padding: 0 20px;
+}
+/* ---------------------------------------------------------------------------------------------------- Form */
+.i_wrapper input[type='text'],
+.i_wrapper input[type='email'],
+.i_wrapper input[type='password'],
+.i_wrapper select,
+.i_wrapper textarea {
+	box-sizing: border-box;
+	border: 1px solid #E4E4E4;
+	color: #4E4E4F;
+	border-radius: 5px;
+	padding: 8px 10px;
+	width: 100%;
+-webkit-appearance: none;
+-webkit-box-shadow: none;
+	moz-box-shadow: none;
+		box-shadow: none;
+}
+@charset 'UTF-8';
+
+@font-face {
+	font-family: 'Roboto Condensed Regular';
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Condensed_Regular.eot');
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Condensed_Regular.eot?#iefix')format('embedded-opentype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Condensed_Regular.woff') format('woff'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Condensed_Regular.ttf') format('truetype');
+	font-style:		normal;
+	font-weight:	normal;
+}
+@font-face {
+	font-family: 'Roboto Medium';
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto-Medium.eot');
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto-Medium.eot?#iefix')format('embedded-opentype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto-Medium.woff') format('woff'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto-Medium.ttf') format('truetype');
+	font-style:		normal;
+	font-weight:	normal;
+}
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url("/local/templates/ilab_it_shop/ilab/font/Roboto-Bold.ttf") format("truetype");
+	font-style:		normal;
+	font-weight:	normal;
+}
+@font-face {
+	font-family: 'Roboto';
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Regular.eot?#iefix') format('embedded-opentype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Regular.woff') format('woff'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Regular.ttf')  format('truetype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Regular.svg#Roboto-Regular') format('svg');
+	font-style:		normal;
+	font-weight:	normal;
+}
+@font-face {
+	font-family: 'Roboto Light';
+	src:	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Light.eot?#iefix') format('embedded-opentype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Light.woff') format('woff'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Light.ttf')  format('truetype'),
+	url('/local/templates/ilab_it_shop/ilab/font/Roboto_Light.svg#Roboto-Regular') format('svg');
+	font-style:		normal;
+	font-weight:	normal;
+}

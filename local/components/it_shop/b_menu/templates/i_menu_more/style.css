@@ -1,0 +1,418 @@
+/* ---------------------------------------------------------------------------------------------------- ad */
+nav.i_menu_overflow .i_mo_ad {
+	height: 50px;
+	color: white;
+	display: flex;
+	align-items: center;
+}
+@media screen and (max-width: 640px) {
+	nav.i_menu_overflow .i_mo_ad {
+		color: unset;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- menu */
+@media screen and (min-width: 641px) {
+	nav.i_menu_overflow {
+		display: flex;
+		overflow:hidden;
+		height: 50px;
+	}
+
+	nav.i_menu_overflow .i_mo_ad {
+		padding: 0 12px 0 0;
+	}
+
+	nav.i_menu_overflow ul {
+		margin: 0;
+		padding: 0;
+		list-style: none
+	}
+
+	nav.i_menu_overflow ul.i_mo {
+		flex: 1;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li {
+		float: left;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span:before {
+		content: '';
+		width: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		background-image:url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/down_white.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: transform 0.2s;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span {
+		padding-right: 32px;
+		position: relative;
+	}
+
+	nav.i_menu_overflow ul.i_mo li a,
+	nav.i_menu_overflow ul.i_mo li span {
+		display: flex;
+		align-items: center;
+		height: 50px;
+		padding: 0 12px;
+		color: #111212;
+		text-decoration: none;
+		cursor: pointer;
+		transition: box-shadow 0.2s, background-color 0.2s linear;
+		z-index: 1000;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > .i_mo_select:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_select:before {
+		transform: rotate(180deg);
+	}
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo > li > a:hover,
+	nav.i_menu_overflow ul.i_mo > li > span:hover {
+		background-color: white;
+		box-shadow: inset 0 3px 0 #111212;
+		color: #f75b18;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li > a:hover:before,
+	nav.i_menu_overflow ul.i_mo > li > span:hover:before,
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_select:before,
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_selected:before {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/down_blue.svg) !important;
+	}
+
+/* ---------------------------------------------------------------------------------------------------- more */
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more {
+		display: none;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span {
+		/*color: white;*/
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span:hover,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_selected {
+		color: #111212;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub {
+		position: relative;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub ul.i_mo_inside {
+		top: 0;
+		left: 100%;
+	}
+
+/* ---------------------------------------------------------------------------------------------------- inside */
+
+	nav.i_menu_overflow ul.i_mo_inside {
+		display: none;
+		position: absolute;
+		z-index: 501;
+		background-color: white;
+		box-shadow: 0 0 7px -3px;
+	}
+	nav.i_menu_overflow ul.i_mo_inside li {}
+	nav.i_menu_overflow ul.i_mo_inside li a {
+		white-space: nowrap;
+		color: #111212;
+	}
+	nav.i_menu_overflow ul.i_mo_inside > li.i_mo_sub > a:before,
+	nav.i_menu_overflow ul.i_mo_inside > li.i_mo_more > span:before {
+		content: '';
+		width: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/down_blue.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: transform 0.2s;
+		transform: rotate(-90deg);
+	}
+
+	nav.i_menu_overflow ul.i_mo_inside > li.i_mo_sub > a,
+	nav.i_menu_overflow ul.i_mo_inside > li.i_mo_more > span {
+		padding-left: 32px;
+		position: relative;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > ul.i_mo_inside > li > a {
+		padding-left: 10px;
+	}
+	/*nav.i_menu_overflow ul.i_mo_inside > li.i_mo_sub > a,
+	nav.i_menu_overflow ul.i_mo_inside > li.i_mo_more > span {
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_blue.svg);
+		background-repeat: no-repeat;
+		background-position: right 12px center;
+		background-size: 12px auto;
+		padding-left: 32px;
+	}*/
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo_inside > li > a:hover {
+		background-color: #EEF1F4;
+		color: #080808;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------- menu adaptive */
+@media screen and (max-width: 640px) {
+	nav.i_menu_overflow {
+		display: flex;
+	}
+
+	nav.i_menu_overflow .i_mo_ad {
+		padding: 0 20px 0 0;
+		cursor: pointer;
+	}
+
+	nav.i_menu_overflow ul {
+		margin: 0;
+		padding: 0;
+		list-style: none
+	}
+
+	.i_tb_nav nav.i_menu_overflow ul.i_mo {
+		box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.35);
+	}
+	nav.i_menu_overflow ul.i_mo {
+		background-color: white;
+
+		position: absolute;
+		right: 0;
+		left: 0;
+		top: 65px;
+		z-index: auto;
+
+		display: none;
+		box-shadow: 0 0 7px -3px rgba(0,0,0,0.75);
+		transition: box-shadow 0.5s;
+		margin: 0 20px;
+		border-radius: 5px;
+	}
+	nav.i_menu_overflow ul.i_mo:before {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border: 5px solid transparent;
+		border-bottom: 5px solid white;
+		top: -20px;
+		left: 40px;
+	}
+	nav.i_menu_overflow ul.i_mo:after {
+		content: '';
+		position: absolute;
+		width: 15px;
+		height: 15px;
+		transform: rotate(45deg);
+		top: -7px;
+		left: 42px;
+		box-shadow: 0 0 8px -3px rgba(0,0,0,0.75);
+		z-index: -1;
+	}
+	nav.i_menu_overflow ul.i_mo > li {}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span:before {
+		content: '';
+		width: 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 12px;
+		background-image: url(/local/templates/ilab_it_shop/ilab/img/svg/arrow/d_blue.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		transition: transform 0.2s;
+	}
+
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > a,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > span {
+		padding-right: 32px;
+		position: relative;
+	}
+
+	nav.i_menu_overflow ul.i_mo li a,
+	nav.i_menu_overflow ul.i_mo li span {
+		display: block;
+		padding: 16px 20px;
+
+		text-decoration: none;
+		cursor: pointer;
+		transition: box-shadow 0.2s, background-color 0.2s linear;
+	}
+
+	nav.i_menu_overflow ul.i_mo li:not(:first-child) a,
+	nav.i_menu_overflow ul.i_mo li:not(:first-child) span{
+		border-top: 1px solid #e4e4e4;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_sub > .i_mo_select:before,
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more > .i_mo_select:before {
+		transform: rotate(180deg);
+	}
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo > li > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo > li > a:hover,
+	nav.i_menu_overflow ul.i_mo > li > span:hover {
+		background-color: #EEF1F4;
+		color: #080808;
+	}
+
+/* ---------------------------------------------------------------------------------------------------- more */
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more {
+		display: none!important;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub {
+		position: relative;
+	}
+	nav.i_menu_overflow ul.i_mo > li.i_mo_more li.i_mo_sub ul.i_mo_inside {
+		top: 0;
+		right: 100%;
+	}
+
+/* ---------------------------------------------------------------------------------------------------- inside */
+
+	nav.i_menu_overflow ul.i_mo_inside {
+		display: none;
+
+		background-color: white;
+	}
+	nav.i_menu_overflow ul.i_mo_inside li {
+		position: relative;
+	}
+	nav.i_menu_overflow ul.i_mo_inside li:before {
+		content: '';
+
+		position: absolute;
+		left: 35px;
+		top: 50%;
+		margin-top: -3px;
+
+		background-color: #003b7f;
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	}
+	nav.i_menu_overflow ul.i_mo_inside li a {
+		white-space: nowrap;
+		padding-left: 50px;
+	}
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_selected,
+	nav.i_menu_overflow ul.i_mo_inside > li > .i_mo_select,
+	nav.i_menu_overflow ul.i_mo_inside > li > a:hover {
+		background-color: #EEF1F4;
+		color: #080808;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------- animated icon nav */
+.i_mo_ad_but {
+	display: none;
+	margin-left: 10px;
+	font-size: 115%;
+	/*font-weight: bold;*/
+	text-transform: uppercase;
+}
+.i_mo_x {
+	display: inline-block;
+	position: relative;
+	transition: 0.25s;
+	user-select: none;
+}
+
+.i_mo_x .i_mo_icon {
+	position: relative;
+	background: #111212;
+	transition: 0.25s;
+}
+.i_mo_x .i_mo_icon:before,
+.i_mo_x .i_mo_icon:after {
+	display: block;
+	content: '';
+	background: #111212;
+	position: absolute;
+	transition: 0.25s;
+}
+/* Open */
+.i_mo_x_open .i_mo_icon:before,
+.i_mo_x_open .i_mo_icon:after {
+	transition: 0.5s;
+	top: 0 !important;
+}
+.i_mo_x_open .i_mo_icon {
+	background: transparent;
+}
+.i_mo_x_open .i_mo_icon:before {
+	transform: rotate(-45deg);
+}
+.i_mo_x_open .i_mo_icon:after {
+	transform: rotate(45deg);
+}
+@media screen and (min-width: 641px) {
+	.i_mo_x {
+		padding: 6px 0;
+	}
+	/* div icon */
+	.i_mo_x .i_mo_icon,
+	.i_mo_x .i_mo_icon:before,
+	.i_mo_x .i_mo_icon:after {
+		width: 15px;
+		height: 3px;
+	}
+	.i_mo_x .i_mo_icon:before {
+		top: 6px;
+	}
+	.i_mo_x .i_mo_icon:after {
+		top: -6px;
+	}
+}
+@media screen and (min-width: 481px) and (max-width: 640px) {
+	.i_mo_x {
+		padding: 8px 0;
+	}
+	.i_mo_x .i_mo_icon,
+	.i_mo_x .i_mo_icon:before,
+	.i_mo_x .i_mo_icon:after {
+		width: 20px;
+		height: 4px;
+	}
+	.i_mo_x .i_mo_icon:before {
+		top: 8px;
+	}
+	.i_mo_x .i_mo_icon:after {
+		top: -8px;
+	}
+
+}
+@media (max-width: 640px) {
+	.i_mo_ad_but {
+		display: block;
+	}
+}
+@media screen and (max-width: 480px) {
+	.i_mo_x {
+		padding: 10px 0;
+	}
+	.i_mo_x .i_mo_icon,
+	.i_mo_x .i_mo_icon:before,
+	.i_mo_x .i_mo_icon:after {
+		width: 20px;
+		height: 4px;
+	}
+	.i_mo_x .i_mo_icon:before {
+		top: 8px;
+	}
+	.i_mo_x .i_mo_icon:after {
+		top: -8px;
+	}
+}

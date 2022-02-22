@@ -1,0 +1,61 @@
+.i_modal_delta {
+	position: absolute;
+	/*background-color: red;
+	height: 5px;
+	width: 5px;*/
+}
+
+/*#i_d_tc,
+#i_d_bc {
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}*/
+
+#i_d_tl {
+	top: 0;
+	left: 0;
+}
+#i_d_tc {
+	margin-left: -14px;
+	top: 0;
+}
+#i_d_tr {
+	top: 0;
+	right: 0;
+}
+
+#i_d_bl {
+	bottom: 0;
+	left: 0;
+}
+#i_d_bc {
+	bottom: 0;
+}
+#i_d_br {
+	bottom: 0;
+	right: 0;
+}
+
+#i_d_cl,
+#i_d_cr {
+	top: 0;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#i_d_cl {
+	left: 0;
+}
+#i_d_cc {/* Not user */
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+#i_d_cr {
+	right: 0;
+}

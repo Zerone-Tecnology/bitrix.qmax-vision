@@ -1,0 +1,53 @@
+/* ---------------------------------------------------------------------------------------------------- iLaB */
+.fi_error {
+	color: red;
+	margin:0;
+}
+	.fi_error li:first-child { margin-top: 10px }
+	.fi_error li:last-child	 { margin-bottom: 10px }
+
+table.fi_form {}
+
+table.fi_form input[type='text'] {
+	/*width: 230px!important*/
+}
+table.fi_form textarea {
+	min-width: 230px;
+	max-width: 345px;
+	min-height: 100px;
+}
+.fi_recaptcha {
+	margin-left: 10px;
+	cursor: pointer;
+}
+.fi_recaptcha:before {
+	content: '';
+}
+.fi_loader { margin-left: 15px }
+.fi_empty {
+	background-color: rgba(244, 80, 85, 0.25);
+}
+
+form[name=contact_us] {
+	margin-bottom: 20px;
+}
+
+form[name=contact_us] table.fi_form tr > td {
+	padding: 0 5px;
+}
+
+form[name=contact_us] table.fi_form tr > td:first-child {
+	width: auto;
+}
+
+@media screen and (max-width: 639px){
+	form[name=contact_us] table.fi_form tr {
+		display: flex;
+		flex-direction: column;
+	}
+
+	form[name=contact_us] table.fi_form tr > td {
+		padding: 5px 0;
+	}
+}
+/* ---------------------------------------------------------------------------------------------------- iLaB */

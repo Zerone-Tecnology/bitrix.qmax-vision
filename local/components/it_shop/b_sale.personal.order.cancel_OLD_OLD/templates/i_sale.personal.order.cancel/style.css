@@ -1,0 +1,39 @@
+.i_but_ou
+{
+	padding: 10px 20px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.bx_my_order_cancel
+{
+	margin-top: 15px;
+}
+.bx_my_order_cancel_mess1,
+.bx_my_order_cancel_mess2
+{
+	margin-top: 15px;
+}
+.bx_my_order_cancel_mess2 textarea
+{
+	max-width: 500px;
+	height: 150px;
+}
+.bx_my_order_cancel_back
+{
+	display: inline-block;
+	margin-top: 5px;
+}
+.bx_my_order_cancel_mess2_quest
+{
+	margin: 0 0 5px;
+}
+.bx_my_order_cancel_but
+{
+	margin-top: 20px;
+}
+.bx_my_order_cancel_but input.i_but_ac
+{
+	padding: 10px 20px;
+}

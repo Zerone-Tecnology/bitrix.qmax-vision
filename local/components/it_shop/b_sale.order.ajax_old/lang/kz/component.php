@@ -1,0 +1,51 @@
+<?
+$MESS ['SOA_MODULE_NOT_INSTALL'] = "Онлайн дүкені модуль орнатылмаған.";
+$MESS ['SOA_CURRENCY_MODULE_NOT_INSTALL'] = "Валюта модуль жүйесінде орнатылмаған.";
+$MESS ['SOA_NEED_AUTH'] = "Авторизациядан қажет тапсырыс орналастыру үшін";
+$MESS ['SOA_TITLE'] = "Тапсырысты қабылдау";
+$MESS ['SOA_ERROR_PERSON_TYPE'] = "Төлеушінің түрін таңдаңыз емес,";
+$MESS ['SOA_ERROR_EMAIL'] = "электрондық пошта мекенжайы дұрыс емес.";
+$MESS ['SOA_ERROR_REQUIRE'] = "Өріс толтырыңыз";
+$MESS ['SOA_Y'] = "Иә";
+$MESS ['SOA_N'] = "Жоқ";
+$MESS ['SOA_FROM'] = "-дан";
+$MESS ['SOA_TO'] = "қарай";
+$MESS ['SOA_HOUR'] = "сағат";
+$MESS ['SOA_MONTH'] = "ай";
+$MESS ['SOA_DAY'] = "күн";
+$MESS ['SOA_ERROR_PAY_SYSTEM'] = "Төлеуге ешқандай төлем жүйелері";
+$MESS ['SOA_VAT_INCLUDED'] = "бағасына кіреді";
+$MESS ['SOA_ERROR_ORDER'] = "Қате жасау тәртібі";
+$MESS ['SOA_PROFILE'] = "Профиль";
+$MESS ['SOA_SHT'] = "дана.";
+$MESS ['SOA_VAT'] = "ҚҚС";
+$MESS ['STOF_ERROR_AUTH_LOGIN'] = "Сәтсіз тіркелген авторландыру: атыңызды енгізіңіз";
+$MESS ['STOF_ERROR_AUTH'] = "Тіркелген пайдаланушы Авторизацияныңжаңылысы";
+$MESS ['STOF_ERROR_REG_NAME'] = "Жаңа пайдаланушыны тіркеу қатесі: өз атын енгізіңіз";
+$MESS ['STOF_ERROR_REG_LASTNAME'] = "Жаңа пайдаланушыны тіркеу қатесі: өз атын енгізіңіз";
+$MESS ['STOF_ERROR_REG_EMAIL'] = "Қате жаңа пайдаланушыны тіркеу: енгізіңіз E-Mail мекен-жайы";
+$MESS ['STOF_ERROR_REG_BAD_EMAIL'] = "Қате жаңа пайдаланушыны тіркеу: Сіз енгізген дұрыс электрондық пошта мекенжайы болып табылады жеткізіңіз";
+$MESS ['STOF_ERROR_REG_FLAG'] = "Логинді енгізіңіз немесе жүйе оны автоматты түрде генерациялау мүмкіндік: Жаңа пайдаланушыны қатесі тіркеу";
+$MESS ['STOF_ERROR_REG_FLAG1'] = "Қате жаңа пайдаланушыны тіркеу: Қажетті құпия сөзді енгізіңіз немесе жүйе оны автоматты түрде құруға мүмкіндік";
+$MESS ['STOF_ERROR_REG_PASS'] = "Қате тіркеу жаңа пайдаланушы: қайталаңыз құпия сөзді сәйкес келмейді";
+$MESS ['STOF_ERROR_REG'] = "Жаңа қолданушыны тіркеу қате";
+$MESS ['STOF_AUTH'] = "Рұқсат";
+$MESS ['INFO_REQ'] = "Сіз сәтті тіркелді.";
+$MESS ['STOF_ERROR_REG_CONFIRM'] = "Сіз сәтті сайтында тіркелген. E-Mail арқылы сізге жіберілген тіркеуді растау үшін жолды тексеріңіз.";
+$MESS ['STOF_ERROR_EMAIL'] = "Пайдаланушы тіркеу үшін Email: көрсетілмеген";
+$MESS ['SALE_DELIV_PERIOD'] = "Жеткізу мерзімі";
+$MESS ['STOF_ERROR_PAY_SYSTEM'] = "Көрсетілмесе, төлем жүйесі";
+
+$MESS ['SOA_NAME_DEFAULT_COLUMN'] = "Тақырып";
+$MESS ['SOA_PROPS_DEFAULT_COLUMN'] = "Сипаттар";
+$MESS ['SOA_PRICE_TYPE_DEFAULT_COLUMN'] = "Бағасы түрі";
+$MESS ['SOA_DISCOUNT_DEFAULT_COLUMN'] = "Шегеру";
+$MESS ['SOA_WEIGHT_DEFAULT_COLUMN'] = "Салмақ";
+$MESS ['SOA_QUANTITY_DEFAULT_COLUMN'] = "Саны";
+$MESS ['SOA_PRICE_DEFAULT_COLUMN'] = "Құны";
+$MESS ['SOA_SUM_DEFAULT_COLUMN'] = "Сома";
+
+$MESS ['SOA_NAME_COLUMN_PREVIEW_TEXT'] = "Қысқаша сипаттамасы";
+$MESS ['SOA_NAME_COLUMN_PREVIEW_PICTURE'] = "Бейне";
+$MESS ['SOA_NAME_COLUMN_DETAIL_PICTURE'] = "Толық суреттер";
+?>

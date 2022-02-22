@@ -1,0 +1,19 @@
+div.subscribe-edit .red {
+	color:red;
+}
+div.subscribe-edit .green {
+	color:green;
+}
+div.subscribe-edit .errorcolor {
+	color:red;
+}
+div.subscribe-edit .successcolor {
+	color:green;
+}
+
+.i_subscription_edit .i_se_form, .i_subscription_edit .i_se_utility {
+	background-color: #ededed;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 20px;
+}

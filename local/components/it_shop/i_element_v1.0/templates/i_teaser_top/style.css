@@ -1,0 +1,122 @@
+/* --------------------------------------------------------------------------------------------------- [i_teaser_t] */
+.i_teaser_t {
+	display: flex;
+}
+.i_teaser_t5 .i_teaser_t_col:last-child .i_teaser_t_item {
+	width: 100%;
+}
+.i_teaser_t4 .i_teaser_t_item {
+	width: 50%;
+}
+.i_teaser_t .i_teaser_t_item {
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 20px;
+}
+.i_teaser_t .i_teaser_t_item:not(:first-child) {
+	margin-left: 20px;
+}
+.i_teaser_t .i_teaser_t_content {
+	display: flex;
+	margin-top: 10px;
+	align-items: center;
+}
+.i_teaser_t_img {
+	line-height: 0;
+}
+.i_teaser_t .i_teaser_t_name {
+	line-height: 1.3em;
+	height: 1.3em;
+	overflow: hidden;
+}
+.i_teaser_t .i_teaser_t_txt {
+	font-size: 87%;
+}
+@media screen and (min-width: 1281px) {
+	.i_teaser_t_col {
+		display: flex;
+	}
+	.i_teaser_t5 .i_teaser_t_col {
+		width: 40%;
+	}
+	.i_teaser_t4 .i_teaser_t_col {
+		width: 50%;
+	}
+	.i_teaser_t5 .i_teaser_t_col:last-child {
+		width: 20%;
+	}
+}
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+	.i_teaser_t_col {
+		display: flex;
+		width: 50%;
+	}
+	.i_teaser_t5 .i_teaser_t_col:last-child {
+		display: none;
+	}
+}
+@media screen and (min-width: 1001px) {
+	.i_teaser_t .i_teaser_t_col:not(:first-child) {
+		margin-left: 20px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.i_teaser_t {
+		flex-direction: column;
+	}
+	.i_teaser_t_col {
+		display: flex;
+	}
+	.i_teaser_t5 .i_teaser_t_item {
+		width: 50%;
+	}
+	.i_teaser_t5 .i_teaser_t_col:last-child {
+		display: none;
+	}
+	.i_teaser_t_col:not(:first-child) {
+		margin-top: 20px;
+	}
+}
+@media screen and (min-width: 481px) {
+	.i_teaser_t .i_teaser_t_name {
+		position: relative;
+		padding-right: 15px;
+	}
+	.i_teaser_t .i_teaser_t_name:after {
+		content: '';
+		position: absolute;
+		background: url(/local/templates/ilab_it_shop/ilab/img/svg/arrows/right_grow.svg) center no-repeat;
+		width: 8px;
+		height: 1.3em;
+		right: 0;
+		top: 0;
+	}
+	.i_teaser_t .i_teaser_t_txt {
+		margin-left: 10px;
+		line-height: 1.3em;
+		height: 2.6em;
+		overflow: hidden;
+	}
+}
+@media screen and (max-width: 480px) {
+	.i_teaser_t .i_teaser_t_item {
+		padding: 10px 5px;
+		display: flex;
+		flex-direction: column;
+	}
+	.i_teaser_t .i_teaser_t_txt
+	{
+		display: none;
+	}
+	.i_teaser_t .i_teaser_t_name {
+		overflow: auto;
+		height: auto;
+		text-align: center;
+		padding-top: 5px;
+	}
+	.i_teaser_t .i_teaser_t_content {
+		flex-direction: column;
+		text-align: center;
+		order: -1;
+	}
+}

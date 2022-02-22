@@ -1,0 +1,167 @@
+.search-item
+{
+	margin-top: 20px;
+	border: 1px solid;
+}
+.i_search_img
+{
+	display: block;
+	line-height: 0;
+}
+.i_search_item_block,
+.i_search_text
+{
+	padding: 20px;
+}
+.search-item .i_ebuy
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.search-item .i_delete_item
+{
+	top: 0;
+}
+.search-item .i_ebuy.can_buy_not
+{
+	flex-direction: column;
+	align-items: stretch;
+}
+.search-item .i_buy_buttom
+{
+	padding: 10px 20px;
+	position: relative;
+}
+.search-item .can_buy_not .i_ebuy_right
+{
+	margin-top: 10px;
+}
+.search-item .can_buy_not .i_buy_buttom
+{
+	display: block;
+}
+.search-item .i_buy_bought
+{
+	left: -1px;
+	top: 0;
+	right: 0;
+}
+.search-item .i_pr_disc
+{
+	text-align: left;
+}
+.search-item .can_buy_not .i_pr_disc
+{
+	text-align: center;
+}
+.search-preview
+{
+	margin-top: 15px;
+}
+.search-advanced
+{
+	margin-top: 20px;
+}
+.search-button
+{
+	padding: 9px 20px;
+	border: 0 none;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+@media screen and (min-width: 720px)
+{
+	.search-item
+	{
+		display: table;
+		width: 100%;
+		min-height: 200px;
+	}
+	.i_search_item_block,
+	.i_search_text
+	{
+		display: table-cell;
+	}
+	.i_search_item_block
+	{
+		width: 240px;
+		vertical-align: middle;
+		position: relative;
+		padding-bottom: 60px;
+	}
+	.i_search_text
+	{
+		position: relative;
+		vertical-align: top;
+	}
+	.search-item-meta
+	{
+		position: absolute;
+		bottom: 0;
+		padding: 10px 20px;
+		left: 0;
+		right: 0;
+		text-align: right;
+	}
+	.i_search_text
+	{
+		border-left: 1px solid;
+	}
+	.search_input_row
+	{
+		display: table;
+		width: 100%;
+	}
+	.search_input_col
+	{
+		display: table-cell;
+	}
+	.search_input_col:nth-child(2)
+	{
+		width: 110px;
+		text-align: right;
+	}
+}
+@media screen and (max-width: 719px)
+{
+	.i_search_item_block
+	{
+		position: relative;
+		padding-bottom: 60px;
+		max-width: 240px;
+		margin: 0 auto;
+	}
+	/*.search-button
+	{
+		margin-top: 20px;
+	}*/
+	.i_search_text
+	{
+		position: relative;
+		padding-bottom: 60px;
+	}
+	.search-item-meta
+	{
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+	}
+}
+.search-sorting
+{
+	margin-top: 20px;
+}
+.i_search_item_block .i_buy_order
+{
+	width: auto;
+}
+.i_search_item_block .i_item_ext
+{
+	padding: 15px 20px;
+}

@@ -1,0 +1,13 @@
+<?
+$PERM["f_telephone.php"]["9"]="W";
+$PERM["f_mobphone.php"]["9"]="W";
+$PERM["f_email.php"]["9"]="W";
+$PERM["f_address.php"]["9"]="W";
+$PERM["i_seo_logo.php"]["9"]="W";
+$PERM["i_seo_logo.php"]["6"]="W";
+$PERM["i_seo.php"]["9"]="W";
+$PERM["i_seo.php"]["6"]="W";
+$PERM["i_copy.php"]["9"]="W";
+$PERM["h_logo.php"]["9"]="W";
+$PERM["h_contact.php"]["9"]="W";
+?>

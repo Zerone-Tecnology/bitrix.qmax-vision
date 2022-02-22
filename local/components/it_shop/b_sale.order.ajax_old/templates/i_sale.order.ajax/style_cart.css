@@ -1,0 +1,61 @@
+.bx_ordercart .bx_ordercart_order_table_container{
+	margin: 15px -15px 0;
+	min-height: 246px;
+}
+
+	.bx_ordercart .bx_ordercart_order_table_container table thead {
+		border-top: 1px solid #D0D0D0;
+		border-bottom: 1px solid #D0D0D0;
+		background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABkAAD/4QMraHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE3OTQzMjlGNTI5QzExRTQ4ODI0RDhCNEVCREZDMTY4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE3OTQzMkEwNTI5QzExRTQ4ODI0RDhCNEVCREZDMTY4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTc5NDMyOUQ1MjlDMTFFNDg4MjREOEI0RUJERkMxNjgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTc5NDMyOUU1MjlDMTFFNDg4MjREOEI0RUJERkMxNjgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/7gAOQWRvYmUAZMAAAAAB/9sAhAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgICAgICAgICAgIDAwMDAwMDAwMDAQEBAQEBAQIBAQICAgECAgMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwP/wAARCAAnAJYDAREAAhEBAxEB/8QAXAABAQEAAAAAAAAAAAAAAAAAAAUKAQEBAQEAAAAAAAAAAAAAAAAAAgEDEAABAwQDAAAAAAAAAAAAAAAAYaETAVHRAhKSohEBAQEBAAAAAAAAAAAAAAAAAJEREv/aAAwDAQACEQMRAD8A34SqxsYSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwgSqwglTq5aSdXATq4CdXATq4CdXATq4CdXATq4CdXATq4CdXATq4CdXATq4CdXATq4CdXATq4EWdfRWOfROvoYdE6+hh0Tr6GHROvoYdE6+hh0Tr6GHROvoYdE6+hh0Tr6GHROvoYdE6+hh0Tr6GHROvoYdE6+hh0Tr6GHROvoYdE6+hh0Tr6GHSNOrloJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgJ1cBOrgTOe1tutcFVBz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcChz2tt1rgUOe1tutcCj//2Q==) repeat-x;
+		background-size: 100% 100%;
+	}
+	.bx_ordercart .bx_ordercart_order_table_container table.bx_ordercart_order_table tbody { font-size: 100% }
+		.bx_ordercart .bx_ordercart_order_table_container table thead td { padding: 11px 15px 11px 0 }
+		
+		.bx_ordercart .bx_ordercart_order_table_container table.bx_ordercart_order_table tbody td:first-child { padding-left: 15px }
+		.bx_ordercart .bx_ordercart_order_table_container table.bx_ordercart_order_table tbody td:last-child { padding-left: 15px }
+		.bx_ordercart .bx_ordercart_order_table_container table.bx_ordercart_order_table tbody td {
+			padding: 5px;
+			border-top: 1px dashed #C4C4C4;
+		}
+	.bx_ordercart .bx_ordercart_photo_container a {
+		display: table-cell;
+		vertical-align: middle;
+		width: 75px; height: 75px;
+	}
+	.bx_ordercart .bx_ordercart_order_table_container .bx_ordercart_photo {
+		margin: 0 auto; display: block;
+		max-width: 69px; max-height: 69px;
+	}
+
+.bx_ordercart_order_pay {
+	right: 0;bottom: 0;
+}
+	.bx_ordercart_order_pay .bx_ordercart_order_pay_right {
+		background-color: #ededed;
+		/*border: 1px solid #DFE0E8;*/
+		color: #151515;
+
+		border-radius: 5px;
+		margin: 60px 15px 0 0;
+		padding: 10px;
+		width: 270px;
+	}
+		.bx_ordercart_order_pay .bx_ordercart_order_pay_right td {
+			padding: 5px
+		}
+		.bx_ordercart_order_pay .bx_ordercart_order_pay_right td.custom_t2.price {
+			font-weight: bold;
+			font-size: 110%;
+			color: #262626;
+		}
+		.bx_ordercart_order_pay .bx_ordercart_order_pay_right td.custom_t2.price.itog { font-size: 185% }
+/* ---------------------------------------------------------------------------------------------------- General */
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_DISCOUNT_PRICE_PERCENT_FORMATED { width: 50px }
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_QUANTITY { width: 85px }
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_PRICE,
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_PRICE_FORMATED,
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_SUM { width: 125px }
+	.bx_ordercart .bx_ordercart_order_table_container table thead td#col_DISCOUNT { width: 100px }
+	.bx_ordercart .bx_ordercart_order_table_container table tbody td.itemphoto { width: 80px }
+/* ---------------------------------------------------------------------------------------------------- General */

@@ -1,0 +1,67 @@
+.bx_item_list_section {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+.bx_item_list_slide {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1px -1px 0;
+}
+.bx_item_list_slide .bx_catalog_item {
+    flex: 235px;
+}
+.bx_catalog_item_container {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px;
+}
+
+.bx_item_list_slide .bx_catalog_item_images {
+    display: block;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.bx_item_list_slide .bx_catalog_item_title {
+    display: block;
+    font-weight: bold;
+    line-height: 1.3em;
+    height: 2.6em;
+    overflow: hidden;
+    margin-top: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.bx_item_list_slide .i_empty_box {
+    flex: 235px;
+    visibility: hidden;
+    height: 0;
+    border: 0 none;
+}
+
+.bx_item_list_slide .btn-link {
+    display: inline-block;
+    border: 1px solid;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.bx_item_list_slide .btn-primary {
+    display: none !important;
+}
+
+.bx_item_list_slide > div:empty {
+    flex: 235px;
+
+    visibility: hidden;
+    height: 0;
+    border: 0 none;
+}

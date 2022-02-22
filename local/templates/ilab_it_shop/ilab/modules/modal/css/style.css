@@ -1,0 +1,555 @@
+/* ---------------------------------------------------------------------------------------------------- Modal window */
+.i_modal:before {
+	/*content: '';*/
+	position: absolute;
+	top: -6px;
+	z-index: -1;
+
+	width: 12px;
+	height: 12px;
+
+	background-color: #f75b18;
+
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	transform: rotate(45deg);
+}
+.i_modal {
+	position: absolute;
+	z-index: 500;
+
+	min-width: 280px;
+
+	background-color: white;
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	border-radius: 7px;
+	/*transition: top .2s,
+				bottom .2s,
+				left .2s,
+				right .2s,
+				margin .2s;
+	overflow: hidden;*/
+}
+.i_modal_title {
+	font-family: "Roboto Bold";
+	padding: 12px 50px 12px 15px;
+	background-color: #111212;
+	border-radius: 5px 5px 0 0;
+	color: white;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.i_auth_password_title_col_2{
+	font-size: 13px;
+}
+.i_auth_but_block_col_2{
+	font-size: 14px;
+}
+.j_m_auth *{
+	font-weight: unset !important;
+}
+.i_modal_close {
+	position: absolute;
+	background: url(/local/templates/ilab_it_shop/ilab/img/svg/close.svg) no-repeat center / 13px auto;
+	display: block;
+	cursor: pointer;
+	height: 50px;
+	right: 0;
+	top: -4px;
+	width: 50px;
+}
+
+.i_modal_body {
+	padding: 15px;
+	border-radius: 0 0 5px 5px;
+	background-color: white;
+}
+.i_modal_body table td {
+	/*padding: 5px;*/
+}
+
+.i_opacity {
+	background-color: black;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/* -----------------------------------------------------------------------------------  {POS} */
+
+/* -----------------------------------------------------------------------------------  Feedback */
+#i_pos_feedback {
+	margin-top: 20px;
+}
+
+#i_pos_feedback .i_modal_body table {
+	width: 100%;
+}
+
+@media screen and (min-width: 490px) {
+	#i_pos_feedback {
+		width: 450px;
+	}
+}
+@media screen and (min-width: 490px) and (max-width: 560px) {
+	#i_pos_feedback {
+		right: 20px!important;
+		left: auto!important;
+	}
+}
+@media screen and (max-width: 489px) {
+	#i_pos_feedback {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	#i_pos_feedback .i_modal_body table tr > td:first-child {
+		display: none;
+	}
+}
+
+/*@media screen and (min-width: 490px) {
+	#i_pos_feedback {
+		width: 450px;
+	}
+}
+@media screen and (min-width: 420px) {
+	#i_pos_feedback {
+		margin-top: 15px;
+	}
+}
+@media screen and (min-width: 490px) and (max-width: 525px) {
+	#i_pos_feedback {
+		left: 0!important;
+		right: 0!important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media screen and (min-width: 489px) and (max-width: 567px) {
+	#i_pos_feedback {
+		right: 20px!important;
+		left: auto!important;
+	}
+}
+@media screen and (max-width: 489px) {
+	#i_pos_feedback {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+@media screen and (max-width: 419px) {
+	#i_pos_feedback {
+		top: 60px!important;
+	}
+}*/
+/* -------------------------------------------------- Delta */
+#i_pos_feedback .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: #f75b18;
+}
+@media screen and (max-width: 390px) {
+	#i_pos_feedback .i_modal_delta {
+		left:0!important;
+		right:0!important;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------- Payment\Delivery */
+#i_pos_pay,
+#i_pos_del {
+	margin-top: 10px;
+}
+
+@media screen and (min-width: 440px) {
+	#i_pos_pay,
+	#i_pos_del {
+		width: 400px;
+	}
+}
+
+@media (max-width: 900px) {
+	#i_d_tc {
+		margin-left: -14px;
+	}
+}
+
+@media screen and (min-width: 440px) and (max-width: 900px) {
+	#i_pos_pay {
+		left: auto !important;
+		right: 20px;
+	}
+}
+@media screen and (min-width: 440px) and (max-width: 950px) {
+	#i_pos_del {
+		left: auto !important;
+		right: 20px;
+	}
+}
+@media screen and (max-width: 439px) {
+	#i_pos_pay,
+	#i_pos_del {
+		left: 20px!important;
+		right: 20px;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_pay .i_modal_delta:before,
+#i_pos_del .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	/*box-shadow: 0 0 10px 0 #0467ad;*/
+	background-color: #111212;
+}
+/* ---------------------------------------------------------------------------------------------------- Map */
+#i_pos_map {
+	margin-bottom: 15px;
+}
+@media (max-width: 880px){
+	#i_pos_map {
+		right: 20px !important;
+	}
+}
+@media screen and (min-width: 590px) {
+	#i_pos_map {
+		width: 550px;
+	}
+}
+@media screen and (max-width: 590px) {
+	#i_pos_map {
+		left: 20px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_map .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: white;
+}
+/* ---------------------------------------------------------------------------------------------------- Map basket */
+#i_bs_pos_map {
+	margin-bottom: 15px;
+}
+@media screen and (min-width: 677px) {
+	#i_bs_pos_map {
+		width: 490px;
+	}
+}
+@media screen and (max-width: 676px) {
+	#i_bs_pos_map {
+		left: 10px!important;
+		right: 10px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_bs_pos_map .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: white;
+}
+/* ---------------------------------------------------------------------------------------------------- Review */
+#i_pos_review {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 551px) {
+	#i_pos_review {}
+}
+@media screen and (max-width: 550px) {
+	#i_pos_review {
+		left: 20px !important;
+		right: 20px;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_review .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: #111212;
+}
+/* ---------------------------------------------------------------------------------------------------- Authorization/Registration */
+#i_pos_regi,
+#i_pos_auth {
+	margin-top: 15px;
+}
+@media screen and (min-width: 361px) {
+	#i_pos_regi,
+	#i_pos_auth {
+		width: 320px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#i_pos_regi,
+	#i_pos_auth {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_regi .i_modal_delta:before,
+#i_pos_auth .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: #111212;
+}
+/* ---------------------------------------------------------------------------------------------------- FP Authorization/Registration */
+#i_fp_pos_regi,
+#i_fp_pos_auth {
+	position: fixed;
+	margin-bottom: 15px;
+}
+@media screen and (min-width: 360px) {
+	#i_fp_pos_regi,
+	#i_fp_pos_auth {
+		width: 320px;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 1024px) {
+	#i_fp_pos_regi,
+	#i_fp_pos_auth {
+		right: 20px !important;
+		left: auto;
+	}
+}
+@media screen and (max-width: 359px) {
+	#i_fp_pos_regi,
+	#i_fp_pos_auth {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_fp_pos_regi .i_modal_delta:before,
+#i_fp_pos_auth .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+	margin-top: 0px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: white;
+}
+/* ---------------------------------------------------------------------------------------------------- Basket Payment\Delivery */
+#i_pos_ba_dmet,
+#i_pos_ba_fpay {
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 801px) {
+	#i_pos_ba_dmet {
+		margin-right: -10px;
+	}
+}
+@media screen and (min-width: 545px) {
+	#i_pos_ba_dmet,
+	#i_pos_ba_fpay {
+		width: 525px;
+	}
+}
+@media screen and (min-width: 545px) and (max-width: 800px) {
+	#i_pos_ba_dmet {
+		margin-right: -20px;
+	}
+	#i_pos_ba_fpay {
+		margin-left: -20px;
+	}
+}
+@media screen and (max-width: 544px) {
+	#i_pos_ba_dmet,
+	#i_pos_ba_fpay {
+		left: 10px!important;
+		right: 10px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_ba_dmet .i_modal_delta:before,
+#i_pos_ba_fpay .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: white;
+}
+
+/* ---------------------------------------------------------------------------------------------------- Quick order */
+#i_pos_quick,
+#i_pos_unit_quick {
+	margin-top: 15px;
+}
+#i_pos_quick {
+
+}
+#i_pos_unit_quick {
+
+}
+@media screen and (min-width: 410px) {
+	#i_pos_quick {
+		width: 350px;
+	}
+}
+@media screen and (min-width: 510px) {
+	#i_pos_unit_quick {
+		width: 350px;
+	}
+}
+@media screen and (min-width: 391px) and (max-width: 509px) {
+	#i_pos_unit_quick {
+		left: 40px!important;
+	}
+}
+@media screen and (max-width: 390px) {
+	#i_pos_unit_quick {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+@media screen and (max-width: 409px) {
+	#i_pos_quick {
+		left: 20px!important;
+		right: 20px!important;
+	}
+}
+/* -------------------------------------------------- Delta */
+#i_pos_quick .i_modal_delta:before,
+#i_pos_unit_quick .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+
+	margin-left: -6px;
+
+	height: 13px;
+	width: 13px;
+
+	transform: rotate(45deg);
+	box-shadow: 0 0 10px 0 rgba(19, 27, 32, 0.25);
+	background-color: #111212;
+}
+
+#i_pos_to_order .i_modal_delta:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: -6px;
+	z-index: -2;
+	margin-left: -6px;
+	height: 13px;
+	width: 13px;
+	transform: rotate(45deg);
+	background-color: #111212;
+}
+
+.i_card_item_inf_act {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -20px;
+	padding: 0 20px;
+	border-top: 1px solid #e5e5e5;
+	width: 100%;
+	border-bottom: 1px solid #e5e5e5;
+	align-items: flex-end;
+}
+
+@media (max-width: 340px) {
+	.i_card_item_inf_act {
+		flex-flow: column;
+		align-items: flex-start;
+	}
+	.i_icard_price .i_card_item_ext {
+		display: inline-block;
+	}
+}

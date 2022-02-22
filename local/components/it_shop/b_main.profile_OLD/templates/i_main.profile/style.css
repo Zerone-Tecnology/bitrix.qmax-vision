@@ -1,0 +1,66 @@
+.bx-auth-profile {
+	padding: 20px;
+	border: 1px solid;
+	border-radius: 5px;
+}
+.profile-table-row:not(:first-child) {
+	margin-top: 20px;
+}
+.profile-table-row:first-child{
+	position: relative;
+	margin-bottom: 35px;
+}
+.profile-table-row:first-child:before{
+	content: '';
+	position: absolute;
+	bottom: -20px;
+	left: -20px;
+	right: -20px;
+	border-bottom: 1px solid;
+}
+.profile-table-row:first-child .profile-table-col {
+	width: 100%;
+	text-align: left;
+	position: relative;
+	font-weight: normal;
+	flex-direction: column;
+	display: flex;
+}
+.profile-table-row .last-login-time-data{
+	margin-top: 15px;
+}
+@media screen and (min-width: 641px) {
+	.profile-table-row {
+		display: table;
+		width: 100%;
+	}
+	.profile-table-col {
+		display: table-cell;
+	}
+	.profile-table-col:first-child {
+		width: 250px;
+	}
+}
+@media screen and (max-width: 640px) {
+	.profile-table-col:not(:first-child) {
+		margin-top: 10px;
+	}
+	.profile-table-col .jq-selectbox
+	{
+		width: 100%;
+	}
+}
+
+.bx-auth-profile
+{
+	border: 0 none;
+	padding: 0;
+	max-width: 620px;
+}
+.bx-auth-profile input[type='submit']
+{
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+}

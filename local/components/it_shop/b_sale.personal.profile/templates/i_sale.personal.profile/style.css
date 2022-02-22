@@ -1,0 +1,19 @@
+.sale-personal-profile-list-actions {
+    padding-left: 0px !important;
+    padding-right: 5px !important;
+}
+
+@media screen and (max-width: 700px) {
+    .sale-personal-profile-list-actions {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .sale-personal-profile-list-change-button span {
+        padding-left: 10px;
+    }
+
+    .sale-personal-profile-list-close-button span {
+        padding-left: 10px;
+    }
+}

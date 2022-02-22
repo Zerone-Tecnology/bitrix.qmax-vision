@@ -1,0 +1,360 @@
+/*!
+	---------- ilab - jQuery Plugin exclusively for Bitrix
+	---------- version: 0.0.1 Beta (September 2018)
+	---------- @requires jQuery v3.2.1
+	----------
+	---------- Copyright 2018 iLab - info@ilab.kz
+
+	ilab = function | Вызов - ilab.function();
+!*/
+
+(function( ilab, $, undefined ) {
+
+// ---------------------------------------------------------------------------------------------------- Private Property
+//	var isHot = true;
+	var modal = $('.j_modal');
+	var modal_close = $('.j_modal_close');
+
+// ---------------------------------------------------------------------------------------------------- Public Property
+//	ilab.ingredient = 'Hello world from ilab!';
+ // ---------------------------------------------------------------------------------------------------- Defaults options
+	ilab.defOptions = {
+			version : '0.0.1',	// version
+			help : false,	// help
+
+			// Callbacks
+			onAfter : undefined, // onAfter
+			onBefore : undefined, // onBefore
+		},
+		defMethods = {
+			Modal: {
+				vKEY : 'Modal_v0.0.1', // Версия
+				showClass : undefined, // Класс div'а который нужно показать в модальном окне
+				addId : undefined, // Id который нужно добавить модальному окну
+				/*
+				position: {
+					horizontal: 'outerLeft' | 'left' | 'center' | 'right' | 'outerRight',
+					vertical: 'outerTop' | top' | 'center' | 'bottom' | 'outerBottom'
+					||
+					320: {
+						horizontal: 'outerLeft' | 'left' | 'center' | 'right' | 'outerRight',
+						vertical: 'outerTop' | top' | 'center' | 'bottom' | 'outerBottom'
+					},
+					// when window width is <= 640px
+					640: {
+						horizontal: 'outerLeft' | 'left' | 'center' | 'right' | 'outerRight',
+						vertical: 'outerTop' | top' | 'center' | 'bottom' | 'outerBottom'
+					},
+					// when window width is <= 480px
+					480: {
+						horizontal: 'outerLeft' | 'left' | 'center' | 'right' | 'outerRight',
+						vertical: 'outerTop' | top' | 'center' | 'bottom' | 'outerBottom'
+					}
+				}*/
+				position : false // (Выше пример параметра) Позиция модального окна (resize в приоритете) (порядок не имеет значения) (по умолчанию слева под кнопкой)
+			},		
+		};
+
+// ---------------------------------------------------------------------------------------------------- Public Method
+	ilab.methods = {
+
+		Modal : function( d )
+		{
+
+			// TODO DELETE
+//			d.modal = modal;
+//			console.log(d);
+
+			// hide div's
+			$('.j_modal_body > div, .j_modal_title > div:not(.j_modal_close)', modal).hide();
+
+			// reset attr
+			modal
+				.data('params', d)
+				.attr('id','')
+				.css({
+					top: '',
+					/*right: '',
+					bottom: '',*/
+					left: ''
+				});
+
+			// show inside div's
+			if(d.showClass)
+				$(d.showClass).show();
+
+			// add id
+			if(d.addId)
+				modal.attr('id', d.addId);
+
+			// Show
+			modal.fadeIn();
+
+			if( d.th )
+				_F._modalPosition( modal, d.position, d.th );
+
+		}
+	}
+// ---------------------------------------------------------------------------------------------------- Private Method
+	_F = {
+		_modalPosition : function ( m, p = [] ,t )
+		{
+
+			var w = $(window).width();
+			// Вернём массив ключей чисел объекта - параметра позиции модального окна
+			var resize = Object.keys(p).filter((v) => +v);
+
+			c = {
+				h: $('body').outerHeight(),
+				w: $('body').outerWidth(),
+
+				bh: t.outerHeight(),
+				bw: t.outerWidth(),
+
+				bt: t.offset().top,
+				bl: t.offset().left,
+
+				mh: m.outerHeight(),
+				mw: m.outerWidth()
+			}
+
+			/*if( $('#bx-panel').length )
+			{
+				var bx = Math.round( $('#bx-panel').height() );
+
+				c.bt = c.bt - bx;
+			}*/
+
+			if( p.vertical )
+				var vertical = p.vertical;
+
+			if( p.horizontal )
+				var horizontal = p.horizontal;
+
+			// Есть параметры для ресайза
+			if( resize.length )
+			{
+
+				// Преобразуем массив в числа и отсортируем
+				var vkey = resize.map(Number).sort((a, b) => b - a);
+//console.log(vkey, p);
+
+				var current;
+
+				// when window width is <= params position
+				$.each(vkey, function( i,v ) {
+					if( w>v )
+						return false;
+
+					current = v;
+				});
+//console.log( 'work: '+current+' result work: '+p[current] );
+
+				// Если нашли параметры под разрешение
+				if( current )
+				{
+					if( p[current].vertical )
+						var vertical = p[current].vertical;
+
+					if( p[current].horizontal )
+						var horizontal = p[current].horizontal;
+				}
+
+			}
+
+//console.log('RESULT: ', vertical, horizontal)
+
+			/*
+				Вычислим как распологать модальное окно относительно кнопки, по заданым параметрам при вызове метода,
+				либо разместим окно по умолчанию слева под кнопкой
+			*/
+
+			// Vertical
+			switch( vertical )
+			{
+				case 'outerTop':
+
+					ptop = c.bt-c.mh;
+
+					break;
+
+				case 'top':
+
+					ptop = c.bt;
+
+					break;
+				case 'center':
+
+					ptop = c.bt+(c.bh/2) - (c.mh/2);
+
+					break;
+				case 'bottom':
+
+					ptop = c.bt+c.bh-c.mh;
+
+					break;
+				case 'outerBottom':
+
+					ptop = c.bt+c.bh;
+
+					break;
+				default:// outerBottom
+
+					ptop = c.bt+c.bh;
+
+					break;
+			}
+
+			// Horizontal
+			switch( horizontal )
+			{
+				case 'outerLeft':
+
+					pleft = c.bl-c.mw;
+
+					break;
+
+				case 'left':
+
+					pleft = c.bl;
+
+					break;
+				case 'center':
+
+					pleft = c.bl+(c.bw/2) - (c.mw/2);;
+
+					break;
+				case 'right':
+
+					pleft = c.bl+c.bw-c.mw;
+
+					break;
+				case 'outerRight':
+
+					pleft = c.bl+c.bw;
+
+					break;
+				default:// left
+
+					pleft = c.bl;
+
+					break;
+			}
+//console.log('CSS:', pleft, ptop);
+			m.css({left: pleft, top: ptop});
+
+			/* OLD if switch
+			var hOuterLeft = c.bl-c.mw;
+			var hLeft = c.bl;
+			var hCenter = c.bl+(c.bw/2) - (c.mw/2);;
+			var hRight = c.bl+c.bw-c.mw;
+			var hOuterRight = c.bl+c.bw;
+
+			if( p.horizontal=='outerLeft' )
+				m.css('left', hOuterLeft);
+			if( p.horizontal=='left' )
+				m.css('left', hLeft);
+			if( p.horizontal=='center' )
+				m.css('left', hCenter);
+			if( p.horizontal=='right' )
+				m.css('left', hRight);
+			if( p.horizontal=='outerRight' )
+				m.css('left', hOuterRight);*/
+
+			/* OLD if switch
+			var vOuterTop = c.h-c.bt;
+			var vTop = c.h-c.bt;
+			var vCenter = c.bt+(c.bh/2) - (c.mh/2);
+			var vBottom = c.bt+c.bh;
+			var vOuterBottom = c.bt+c.bh;
+
+			if( p.vertical=='top' )
+				m.css('bottom', vTop);
+			if( p.vertical=='center' )
+				m.css('top', vCenter);
+			if( p.vertical=='bottom' )
+				m.css('top', vBottom);*/
+
+		},
+		_modalResize : function ( m,p=[],t )
+		{
+
+			if( modal.length && modal.is(':visible') && modal.data('params').th )
+				_F._modalPosition(modal, modal.data('params').position, modal.data('params').th);
+
+		},
+		_modalClose : function ()
+		{
+
+			modal.hide();
+
+		},
+		_outsideHide : function (ev)
+		{
+
+//			console.log($(ev.target));
+//			console.log($(ev.target).parents().filter(modal).length);
+//			console.log($(ev.target).filter(modal).length != 1);
+
+			if ( ($(ev.target).parents().filter(modal).length != 1) && ($(ev.target).filter(modal).length != 1) )
+				_F._modalClose();
+
+		}
+
+	}
+
+// ---------------------------------------------------------------------------------------------------- Scripts
+	$(document).ready(function(){
+
+		$(window).resize( _F._modalResize );
+		$('body').on('click', '.j_modal_close', _F._modalClose);
+		$(document).on('click', _F._outsideHide);
+
+	});
+
+}( window.ilab = window.ilab || {}, jQuery ));
+
+
+
+
+
+
+/*
+				{
+					320: 'outerBottom',
+					// when window width is <= 480px
+					480: 'outerBottom',
+					// when window width is <= 640px
+					640: 'outerBottom',
+				}
+*/
+
+
+/*
+				var oView = {'DESKTOP': false, 'TABLET': 920, 'MOBILE': 500};//'OTHER1': 700, 'OTHER2': 600,
+				var kView = Object.keys(oView);
+				var lView = kView.length-1;
+
+				$.each(kView, function(k,v){
+					var c = oView[v] && 1+oView[v];// current
+					var n = oView[kView[k+1]];// next
+					console.log(lView,k,v,c,n);
+
+					if(w<c && lView==k)// MOBILE last
+						vi = v;
+					else if(w<c && w>n)// TABLET/OTHER
+						vi = v;
+					else if(!c)// DESKTOP
+						vi = v;
+				});
+				console.log(vi);
+*/
+				/*$.each(p.vertical, function( k,v ) {
+					console.log( k,v,w );
+console.log( 'work', w+'<='+k, v);
+					if( w<=k )
+					{
+						console.log( 'work', w+'<='+k, v);
+						return;
+					}
+				});*/

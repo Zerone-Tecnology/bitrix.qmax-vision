@@ -1,0 +1,137 @@
+.subscribe_item
+{
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.subscribe_item_img a
+{
+	display: block;
+	padding-top: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+}
+.subscribe_item_name
+{
+	margin-top: 20px;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1.3em;
+	height: 2.6em;
+}
+.subscribe_item_more_wrap,
+.subscribe_item_delete_wrap
+{
+	margin-top: 20px;
+	text-align: center;
+}
+.subscribe_item_more
+{
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.subscribe_item_delete
+{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-weight: normal;
+}
+.subscribe_item_delete span
+{
+	border-bottom: 1px dashed;
+}
+.subscribe_wrap
+{
+	margin-top: 20px;
+}
+@media screen and (min-width: 480px)
+{
+	.subscribe_wrap
+	{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (min-width: 1280px)
+{
+	/* ---------------------------------------------- col4 */
+	.col4 .subscribe_item
+	{
+		flex-basis: 20%;
+		flex-grow: 1;
+		max-width: 25%;
+	}
+	.col4 .subscribe_item:not(:nth-child(4n+1))
+	{
+		margin-left: 20px;
+	}
+	/* ---------------------------------------------- col3 */
+	.col3 .subscribe_item
+	{
+		flex-basis: 30%;
+		flex-grow: 1;
+		max-width: 32%;
+	}
+	.col3 .subscribe_item:not(:nth-child(3n+1))
+	{
+		margin-left: 20px;
+	}
+	/* ---------------------------------------------- col2 */
+	.col2 .subscribe_item
+	{
+		flex-basis: 40%;
+		flex-grow: 1;
+		max-width: 50%;
+	}
+	.col2 .subscribe_item:not(:nth-child(2n+1))
+	{
+		margin-left: 20px;
+	}
+	.col2 .subscribe_item
+	{
+		display: flex;
+	}
+	.col2 .subscribe_item_img
+	{
+		min-width: 200px;
+	}
+	.col2 .subscribe_item_name
+	{
+		margin-top: 0;
+		margin-left: 20px;
+	}
+}
+@media screen and (min-width: 640px) and (max-width: 1279px)
+{
+	.subscribe_wrap .subscribe_item
+	{
+		flex-basis: 30%;
+		flex-grow: 1;
+		max-width: 32%;
+	}
+	.subscribe_wrap .subscribe_item:not(:nth-child(3n+1))
+	{
+		margin-left: 20px;
+	}
+}
+@media screen and (min-width: 480px) and (max-width: 639px)
+{
+	.subscribe_wrap .subscribe_item
+	{
+		flex-basis: 40%;
+		flex-grow: 1;
+		max-width: 50%;
+	}
+	.subscribe_wrap .subscribe_item:not(:nth-child(2n+1))
+	{
+		margin-left: 20px;
+	}
+}

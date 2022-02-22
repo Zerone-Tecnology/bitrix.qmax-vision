@@ -1,0 +1,2 @@
+<!--<img title="iLab Shop" src="<?=SITE_TEMPLATE_PATH?>/ilab/img/logo/qmax.png" alt="iLab Shop"  src="/local/templates/ilab_it_shop/ilab/img/svg/main/seologo_white.png" >-->
+<img alt="logo.png" style="background: " src="/local/templates/ilab_it_shop/ilab/img/logo/qmax.svg" title="logo.png">

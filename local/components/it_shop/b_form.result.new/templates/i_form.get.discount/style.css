@@ -1,0 +1,56 @@
+/* ---------------------------------------------------------------------------------------------------- iLaB */
+.gd_error {
+	color: red;
+	margin-top: 0;
+}
+
+table.gd_form {}
+table.gd_form td { padding: 7px 0 }
+
+table.gd_form input {
+	width: 100%;
+	padding: 7px 5px !important;
+}
+table.gd_form input[type='text'] {
+	/*color: #5E5E5E;*/
+	padding: 7px 5px;
+}
+table.gd_form textarea {
+	width: 100%!important;
+	min-height: 100px;
+	max-height: 110px;
+}
+.gd_recaptcha {
+	margin-left: 10px;
+	cursor: pointer;
+}
+.gd_recaptcha:before {
+	content: '';
+}
+.gd_loader { margin-left: 15px }
+.gd_empty {
+	background-color: rgba(244, 80, 85, 0.25);
+}
+.i_but_bg_loader:before {
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 1px solid;
+	border-radius: 5px;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+table.gd_form input.i_but_bg
+{
+	padding: 10px 12px !important;
+}
+/* ---------------------------------------------------------------------------------------------------- iLaB */
+
+.i_get_disc {
+	border: 1px solid #D5D5D5;
+	border-radius: 5px;
+	padding: 15px 13px 0;
+	height: 312px;
+}

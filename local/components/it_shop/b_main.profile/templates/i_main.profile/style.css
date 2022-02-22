@@ -1,0 +1,202 @@
+.profile-block-hidden
+{
+	display: none;
+}
+
+.profile-block-shown
+{
+	display:block;
+}
+
+.profile-table
+{
+	width: 100%;
+}
+
+.profile-link
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.profile-table td {
+	vertical-align: top;
+	width:50%;
+}
+
+div.bx-auth-profile input.bx-auth-input {vertical-align:middle;}
+div.bx-auth-profile span.bx-auth-secure {background-color:#FFFAE3; border:1px solid #DEDBC8; padding:2px; display:inline-block; vertical-align:middle;}
+div.bx-auth-profile div.bx-auth-secure-icon {background-image:url(images/sec.png); background-repeat:no-repeat; background-position:center; width:19px; height:18px;}
+div.bx-auth-profile div.bx-auth-secure-unlock {background-image:url(images/sec-unlocked.png);}
+
+/* ---------------------------------------------------------------------------------------------------- BX profile */
+.bx-auth-profile {
+	background-color: #ffffff;
+	/*border-radius: 5px;*/
+	padding: 20px;
+	/*font-size: 90%;*/
+}
+
+/* Last update */
+.bx-auth-profile .i_pr_last_update {
+	border-bottom: 1px solid white;
+	margin: 0 -20px 20px;
+	padding: 0 20px 20px;
+}
+.bx-auth-profile .i_pr_last_update > div {
+	display: flex;
+}
+.bx-auth-profile .i_pr_last_update > div:first-child {
+	margin-bottom: 10px;
+}
+
+/* Body */
+.bx-auth-profile .i_pr_body {
+	display: flex;
+}
+.bx-auth-profile .i_pr_body > div {
+	display: flex;
+	flex-direction: column;
+}
+.bx-auth-profile .i_pr_body > div > div {
+	display: flex;
+}
+
+
+.bx-auth-profile .i_pr_body > div > div:not(:first-child) {
+	/*margin-top: 10px;*/
+}
+.bx-auth-profile .i_pr_body > div > div > div:first-child {
+	flex: 0 45%;
+	display: flex;
+	justify-content: flex-end;
+	text-align: right;
+	align-items: center;
+	margin-right: 20px;
+	font-weight: normal;
+	font-family: "Roboto Bold", sans-serif;
+}
+
+
+.bx-auth-profile div.i_pr_body div.i_pr_email {
+	/*margin-top: 30px;*/
+}
+
+/* Button */
+.bx-auth-profile .i_pr_button {
+	display: flex;
+}
+.bx-auth-profile .i_pr_button > div {
+	flex: 1;
+	display: flex;
+}
+.bx-auth-profile .i_pr_button > div:last-child {
+	margin-left: 20px;
+	justify-content: center;
+	margin-top: 20px;
+}
+.bx-auth-profile .i_pr_button > div > div {
+	display: flex;
+}
+.bx-auth-profile .i_pr_button > div > div:not(:first-child) {
+	margin-top: 30px;
+}
+.bx-auth-profile .i_pr_button > div > div:first-child {
+	flex: 0 45%;
+	margin-right: 20px;
+	justify-content: center;
+}
+/* -----------------------------------------------------------  страница настроек -->*/
+.i_pr_left > div, .i_pr_right>div {
+	width: 50%;
+	margin-top: 10px;
+}
+.bx-auth-profile .i_pr_body{
+	display: flex;
+	flex-direction: column;
+}
+.bx-auth-profile .i_pr_body > div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.i_pr_body *::placeholder
+{
+	opacity: 0;
+}
+
+.i_personal_page .bx-auth-profile{
+	font-size: 14px;
+}
+.i_personal_page .bx-auth-profile{
+	border-top: 1px solid #ededed;
+	/*padding: 20px;*/
+}
+.i_personal_page .profile-block-shown .i_pr_last_update{
+	border-bottom: 1px solid #ededed;
+}
+.i_left_text{
+	min-width: 167px;
+}
+/* -----------------------------------------------------------  страница настроек <--*/
+/* ---------------------------------------------------------------------------------------------------- Media */
+
+@media screen and (min-width: 841px) {
+	.bx-auth-profile .i_pr_body > div {
+		flex: 1;
+	}
+	.bx-auth-profile .i_pr_body .i_pr_right {
+		/*margin-left: 20px;*/
+	}
+}
+@media screen and (max-width: 840px) {
+	.bx-auth-profile .i_pr_button,
+	.bx-auth-profile .i_pr_body {
+		flex-direction: column;
+	}
+	.bx-auth-profile .i_pr_right {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.i_pr_left > div, .i_pr_right>div{
+		width: 100%;
+	}
+	.bx-auth-profile .i_pr_body > .i_pr_left ,
+	.bx-auth-profile .i_pr_body > .i_pr_right ,
+	.bx-auth-profile .i_pr_body > div{
+		flex-direction: column;
+	}
+	/*.bx-auth-profile .i_pr_body > div{*/
+		/*display: flex;*/
+		/*flex-direction: column !important;*/
+		/*flex-wrap: wrap;*/
+	/*}*/
+
+	/*.bx-auth-profile .i_pr_body > div{}*/
+}
+@media screen and (min-width: 480px) {
+	.bx-auth-profile .i_pr_body > div > div > div:last-child,
+	.bx-auth-profile .i_pr_button > div > div:last-child {
+		flex: 0 55%;
+	}
+}
+@media screen and (max-width: 479px) {
+	.bx-auth-profile .i_pr_body > div > div > div:first-child,
+	.bx-auth-profile .i_pr_button > div > div:first-child {
+		display: none;
+	}
+	.bx-auth-profile .i_pr_body > div > div > div:last-child,
+	.bx-auth-profile .i_pr_button > div > div:last-child {
+		flex: 1;
+	}
+	.i_pr_body *::placeholder
+	{
+		opacity: 1;
+	}
+
+}
